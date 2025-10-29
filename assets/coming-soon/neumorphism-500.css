@@ -1,0 +1,146 @@
+:root{
+
+    --primary-off-white: #f0f0f0;
+    --secondary-off-white: #e0e0e0;
+
+    --primary-blue: #3c74a9;
+    --secondary-blue: #42a5f5;
+
+    --primary-green: #4caf50;
+    --secondary-green: #81c784;
+
+    --primary-red: #f44336;
+    --secondary-red: #e57373;
+
+    --primary-yellow: #ffeb3b;
+    --secondary-yellow: #fff176;
+
+    --primary-black: #212121;
+    --secondary-black: #424242;
+
+    --primary-orange: #ff9800;
+    --secondary-orange: #ffb74d;
+
+
+}
+
+.return-button{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 1.5vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    color: var(--primary-black);
+    background-color: var(--primary-off-white);
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+    box-shadow:
+        -5px -5px 15px rgba(255, 255, 255, 0.7), /* Light shadow (top-left) */
+        5px 5px 15px rgba(0, 0, 0, 0.3); /* Dark shadow (bottom-right) */
+    transition: all 0.2s ease-in-out;
+    text-align: center;
+    text-decoration: none;
+}
+
+/*MODIFY BELOW ONLY*/
+
+body{
+    background-color: var(--primary-off-white);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+
+.neumorphism-500-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.neumorphism-500-title{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 72px;
+    font-weight: 500;
+    color: var(--primary-off-white);
+    text-align: center;
+
+    text-shadow:
+    -5px -5px 10px rgba(255, 255, 255, 0.7), /* Light shadow (top-left) */
+    5px 5px 10px rgba(0, 0, 0, 0.3); /* Dark shadow (bottom-right) */
+
+}
+
+.neumorphism-500-subtitle{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    color: var(--primary-black);
+    text-align: center;
+    margin-top: -2vw;
+
+    text-shadow:
+    -3px -3px 6px rgba(255, 255, 255, 0.7), /* Light shadow (top-left) */
+    3px 3px 6px rgba(0, 0, 0, 0.3); /* Dark shadow (bottom-right) */
+
+}
+
+.neumorphism-500-text{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--primary-black);
+    text-align: center;
+    margin-top: -1vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+
+    
+}
+
+
+.neumorphism-500-button{
+    display: block;
+    padding: 20px;
+    font-size: 24px;    
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    color: var(--primary-black);
+    background-color: var(--primary-off-white);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow:
+        -5px -5px 15px rgba(255, 255, 255, 0.7), /* Light shadow (top-left) */
+        5px 5px 15px rgba(0, 0, 0, 0.3); /* Dark shadow (bottom-right) */
+    transition: all 0.2s ease-in-out;
+    text-align: center;
+    text-decoration: none;
+}   
+
+.neumorphism-500-button:hover{
+    box-shadow:
+        inset -5px -5px 15px rgba(255, 255, 255, 0.7), /* Inset light shadow (top-left) */
+        inset 5px 5px 15px rgba(0, 0, 0, 0.3); /* Inset dark shadow (bottom-right) */
+    transform: translateY(2px);
+}
+
+.neumorphism-500-button a{
+    text-decoration: none;
+    color: var(--primary-black);
+}
+
+.neumorphism-500-button:focus{
+    transform: translateY(4px);
+    background-color: var(--primary-off-white);
+    box-shadow:
+        inset -3px -3px 10px rgba(255, 255, 255, 0.7), /* Inset light shadow (top-left) */
+        inset 3px 3px 10px rgba(0, 0, 0, 0.3); /* Inset dark shadow (bottom-right) */
+}
