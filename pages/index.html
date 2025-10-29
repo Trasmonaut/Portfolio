@@ -19,6 +19,7 @@
     <link rel="icon" type="image/x-icon" href="../assets/images/ico.ico">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../assets/index/index.css">
     <!-- Preconnect to Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,9 +28,10 @@
 
 </head>
 <body>
-    <div class="cursor-dot"></div>
+    <div class="cursor-dot "></div>
     <!--Responsive Navbar-->
 
+    
     <nav class ="z-depth-0">
     <div class="nav-wrapper">
         <a href="#contact-me-section" class="brand-logo right">
@@ -40,7 +42,7 @@
             <li><a href="#about-me-section" class = "primary-text">about me</a></li>
             <li><a href="badges.html" class = "primary-text">projects</a></li>
             <li><a href="collapsible.html" class = "primary-text">social proof</a></li>
-            <li><a href="mobile.html" class = "primary-text">work experience</a></li>
+            <li><a href="#work-education" class = "primary-text">work experience</a></li>
             <li><a href="mobile.html" class = "primary-text">education</a></li>
         </ul>
     </div>
@@ -50,8 +52,7 @@
         <li><a href="#about-me-mobile" class = "primary-text">about me</a></li>
         <li><a href="badges.html" class = "primary-text">projects</a></li>
         <li><a href="collapsible.html" class = "primary-text">social proof</a></li>
-        <li><a href="mobile.html" class = "primary-text">work experience</a></li>
-        <li><a href="mobile.html" class = "primary-text">education</a></li>
+        <li><a href="#work-education" class = "primary-text">work experience</a></li>
         <li><a href="#contact-me-section" class = "primary-text">CONTACT ME</a></li>
 
     </ul>
@@ -97,7 +98,61 @@
     <!-- End of About Me Section -->
 
 
+    <!-- Work/ Education Section -->
 
+    <div class = "work-education section container" id ="work-education">
+        <div class = "work-education-left">
+            <h2 class="section-title">Work</h2>
+            <div class="random-square"></div>
+            <div class = "section-title">Experience</div>
+            
+
+            <p class = "subtitle">[1] July 2024 - Present Freelance Developer</p>
+            <p class = "work-education-text">Designed and deployed responsive client websites using Flask, HTML, CSS, and Python.</p>
+            <p class = "work-education-text">Improved user experience and SEO performance for small business clients.</p>
+            <div class = "gap-2rem"></div>
+
+            <p class = "subtitle">[2] 2024 June - August Caribbean Electrical and Instrumentation Limited</p>
+            <p class = "work-education-text">VOIP Technician - Configuration, Management and Maintenance of VOIP devices/systems</p>
+            <div class = "gap-2rem"></div>
+
+            <p class = "subtitle">[3] 2020 - Present Lower Barrackpore Presbyterian Church</p>
+            <p class = "work-education-text">IT Manager , AV Assistant, Camera Operator</p>
+            <div class = "gap-2rem"></div>
+
+        </div>
+
+        <div class = "work-education-right col s6">
+            <h2 class="section-title">Education</h2>
+            <div class="random-square"></div>
+
+            <p class = "subtitle">[1] 2022 - 2025 University of the West Indies St. Augustine BSc Information Technology (Second Class Honors)</p>
+            <p class = "work-education-text">Including courses in Web Development, Computer Programming, Big Data Analysis, Game Development and Human Computer Interaction. 
+Including Student Course Representative, DCIT Outreach Volunteer</p>
+            <div class = "gap-2rem"></div>
+
+            <p class = "subtitle">[2] 2020 - 2022 San Fernando Central Secondary School CAPE</p>
+            <p class = "work-education-text">Including Cape passes Physics, Information Technology, Chemistry </p>
+            <div class = "gap-2rem"></div>
+
+            <p class = "subtitle">[3] 2015 - 2020 San Fernando Central Secondary School CSEC</p>
+            <p class = "work-education-text">Including Csec passes Mathematics, English, Information Technology, Additional Mathematics </p>
+            <div class = "gap-2rem"></div>
+
+            <p class = "subtitle">[4] 2013 - 2018 Trinity Music College London Grade 1,2,3,4 Theory of Music , Grade 1 Piano</p>
+            <div class="gap-2rem"></div>
+
+            <p class = "subtitle">[5] 2014 University of the West Indies Open Campus Comic Book Art</p>
+          
+
+        <div class = "gap-4rem"></div>
+
+        </div>  
+
+        <button class="resume-button" onclick="downloadResume()">Download Resume</button>
+        <div class = "gap-4rem"></div>
+    </div>
+    <!-- End of Work/ Education Section -->
     <!--Contact Me Section -->
     <div class="contact-me" id="contact-me-section">
         <p class = "section-title">Contact Me</p>
@@ -105,66 +160,78 @@
 
         <div class="row">
 
-        <div class ="col s6">
-            <p class = "primary-text">If you'd like to get in touch, feel free to reach out! I am currently seeking new opportunities and full time employment, in any IT role. Wheather you're a potential employer, collaborator, or just someone who wants to chat, I'm all ears! I'll try my best to get back to you as soon as possible.</p>
-        
-            <div class = "flexicon-container">
-                <div class="flexicon">
-                    <div class="flexicon-icon">
-                        <i class="fa-brands fa-instagram"></i>
+            <!--Left Half-->
+            <div class ="col s6">
+                <p class = "primary-text">If you'd like to get in touch, feel free to reach out! I am currently seeking new opportunities and full time employment, in any IT role. Wheather you're a potential employer, collaborator, or just someone who wants to chat, I'm all ears! I'll try my best to get back to you as soon as possible.</p>
+            
+                <div class = "flexicon-container">
+                    <div class="flexicon">
+                        <div class="flexicon-icon">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <div class="flexicon-text">
+                            <a href="https://www.instagram.com/kay.ramdath" target="_blank"><p><i class="fa-brands fa-instagram"></i> Instagram</p></a>
+                        </div>
                     </div>
-                    <div class="flexicon-text">
-                        <a href="https://www.instagram.com/kay.ramdath" target="_blank"><p><i class="fa-brands fa-instagram"></i> Instagram</p></a>
+
+            
+                    <div class="flexicon">
+                        <div class="flexicon-icon">
+                            <i class="fa-brands fa-github"></i>
+                        </div>
+                        <div class="flexicon-text">
+                            <a href="https://github.com/Trasmonaut" target="_blank"><p><i class="fa-brands fa-github"></i>  Github</p></a>
+                        </div>
+                    </div> 
+                    
+                    <div class="flexicon">
+                        <div class="flexicon-icon">
+                            <i class="fa-solid fa-inbox"></i>
+                        </div>
+                        <div class="flexicon-text">
+                            <a href="mailto:c.ramdath.26@gmail.com"><p><i class="fa-solid fa-inbox"></i> Gmail</p></a>
+                        </div>
+                    </div>
+
+                    <div class="flexicon">
+                        <div class="flexicon-icon">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+                        <div class="flexicon-text">
+                            <a href="https://linkedin.com/in/caleb-g-ramdath" target="_blank"><p><i class="fa-brands fa-linkedin-in"></i> Linked In</p></a>
+                        </div>
+                    </div>
+
+                    <div class="flexicon">
+                        <div class="flexicon-icon">
+                            <i class="fa-brands fa-whatsapp"></i></i>
+                        </div>
+                        <div class="flexicon-text">
+                            <a href="https://wa.me/18687536045?text=Hello!%20I%20came%20here%20from%20your%20Portfoilio." target="_blank"><p><i class="fa-brands fa-whatsapp"></i> WhatsApp</p></a>
+                        </div>
                     </div>
                 </div>
-
-        
-                <div class="flexicon">
-                    <div class="flexicon-icon">
-                        <i class="fa-brands fa-github"></i>
-                    </div>
-                    <div class="flexicon-text">
-                        <a href="https://github.com/Trasmonaut" target="_blank"><p><i class="fa-brands fa-github"></i>  Github</p></a>
-                    </div>
-                </div> 
-                
-                <div class="flexicon">
-                    <div class="flexicon-icon">
-                        <i class="fa-solid fa-inbox"></i>
-                    </div>
-                    <div class="flexicon-text">
-                        <a href="mailto:c.ramdath.26@gmail.com"><p><i class="fa-solid fa-inbox"></i> Gmail</p></a>
-                    </div>
+            
+            </div> 
+            <!--Right Half-Direction-->
+            <div class ="col s6 quick-links-column">
+                <div data-aos="fade-up">
+                    <p class = "footer-title">Quick Links</p>
+                    <p class = "footer-links"><a href="#home">Home</a></p>
+                    <p class = "footer-links"><a href="#work-education">Work / Education</a></p>
+                    
+                    
                 </div>
-
-                <div class="flexicon">
-                    <div class="flexicon-icon">
-                        <i class="fa-brands fa-linkedin-in"></i>
-                    </div>
-                    <div class="flexicon-text">
-                        <a href="https://linkedin.com/in/caleb-g-ramdath" target="_blank"><p><i class="fa-brands fa-linkedin-in"></i> Linked In</p></a>
-                    </div>
-                </div>
-
-                <div class="flexicon">
-                    <div class="flexicon-icon">
-                        <i class="fa-brands fa-whatsapp"></i></i>
-                    </div>
-                    <div class="flexicon-text">
-                        <a href="https://wa.me/18687536045?text=Hello!%20I%20came%20here%20from%20your%20Portfoilio." target="_blank"><p><i class="fa-brands fa-whatsapp"></i> WhatsApp</p></a>
-                    </div>
-                </div>
-
             </div>
-        
-        </div>  
-        <div class ="col s6">
-        
         </div>
+        <p class="footer-footer">2025 Developed and Designed by Caleb Ramdath</p>
+    </div> 
 
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 
     <!-- GSAP JS (load before project scripts so plugins are available) -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>

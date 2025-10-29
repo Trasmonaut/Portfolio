@@ -80,7 +80,7 @@ gsap.registerPlugin(ScrollTrigger);
 gsap.from(".primary-highlighted-text", {
 scrollTrigger: {
     trigger: ".about-section",
-    start: "40%", // when 40% of the section is in view
+    start: "top 60%", // when 60% of the section is in view
 },
 y: 20,
 opacity: 0,
@@ -88,3 +88,15 @@ duration: 0.8,
 stagger: 0.2, // delay between each highlight
 ease: "power2.out"
 });
+
+// Initialize AOS (Animate On Scroll) library
+AOS.init();
+
+function downloadResume() {
+    const link = document.createElement('a');
+    link.href = '../assets/CalebGabrielRamdathResume.pdf';
+    link.download = 'CalebGabrielRamdathResume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}

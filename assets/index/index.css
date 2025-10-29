@@ -68,7 +68,7 @@ body{
 .nav-wrapper{
     background-color: var(--primary-background);
     box-shadow:none;
-    position: fixed;
+
 }
 
 .primary-text{
@@ -110,6 +110,7 @@ body{
 .section-title{
     font-size: 2.5rem;
     font-weight: 900;
+    line-height: 0.8;
     margin: 0;
     padding: 0;
     color: var(--primary-text);
@@ -128,6 +129,7 @@ body{
     transition: background-color 0.3s ease;
     justify-self: center;
     text-transform: uppercase;
+    position: sticky;
 }
 
 .contact-me-btn:hover, .contact-me-btn:focus, .contact-me-btn:active{
@@ -286,6 +288,111 @@ body{
     
     }
 }
+
+.input-field{
+    font-family: "Jura", sans-serif;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+}
+
+.input-field input,
+.input-field textarea {
+    font-family: "Jura", sans-serif;
+    box-sizing: border-box;
+    color: var(--light-gray-text);
+    margin-bottom: 16px;
+}
+
+.input-field-label{
+    font-family: "Jura", sans-serif;
+    
+}
+
+.footer-links, .footer-title{
+    color: var(--light-gray-text);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: "Jura", sans-serif;
+    text-align: right;
+}
+
+
+.footer-title{
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color:white;
+    
+}
+
+.footer-links a{
+    color: var(--light-gray-text);
+    text-decoration: none;
+}
+.footer-links a:hover{
+    color: var(--highlight-green);
+}
+
+.footer-footer{
+    color: var(--light-gray-text);
+    font-size: 1rem;
+    font-family: "Jura", sans-serif;
+    text-align: right;
+    margin-top: 1rem;
+}
+
+.work-education-left{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+}
+
+.work-education-right{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.work-education-text{
+    font-family: "Jura", sans-serif;
+    color: var(--primary-text);
+    font-size: 1.2rem;
+    margin: 0;
+    font-weight: 500;
+    line-height: 0.9;
+    padding: 0;
+}
+
+.resume-button{
+    background-color: var(--primary-black);
+    color: var(--light-gray-text);
+    font-size: 1.2rem;
+    width: fit-content;
+    justify-content: center;
+    align-self: center;
+    font-weight: 600;
+    font-family: "Jura", sans-serif;
+    padding: 12px 24px;
+    border: none;
+    transition: background-color 0.3s ease;
+    justify-self: center;
+    text-transform: uppercase;
+    margin-top: 2rem;
+}
+
+
+.resume-button:hover, .resume-button:focus, .resume-button:active{
+    background-color: var(--primary-black);
+    color: var(--light-gray-text);
+    transform: scale(1.05);
+
+}
+
+
+
+
+
+
 
 @media only screen and (max-width: 768px) {
     .main-title{
