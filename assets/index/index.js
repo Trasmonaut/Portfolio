@@ -22,8 +22,7 @@ document.addEventListener("mousemove", (e) => {
 
 });
 
-
-
+// Hide cursor on link hover
 document.addEventListener('DOMContentLoaded', function() {
     const links = document.querySelectorAll('a, button'); // Select all anchor elements
 
@@ -40,6 +39,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
 document.body.style.cursor = 'none';
 document.body.classList.add('hide-cursor');
+
+// Register GSAP plugins used in this file (ScrambleTextPlugin is included in the HTML before this script)
+if (window.gsap) {
+    if (window.ScrambleTextPlugin || window.ScrollTrigger) {
+        gsap.registerPlugin(ScrambleTextPlugin, ScrollTrigger);
+    }
+}
 
 
 // GSAP animation for the main title (slide-in + scramble reveal)
@@ -68,26 +74,28 @@ document.addEventListener('DOMContentLoaded', function() {
             scrambleText: {
                 text: originalTexts[i],
                 speed: 0.6,
-                chars: 'upperCase'
+                chars: 'lowerCase',
             }
         }, '-=0.6');
     });
 });
 
 // GSAP animation for about section highlighted text
-gsap.registerPlugin(ScrollTrigger);
-
-gsap.from(".primary-highlighted-text", {
-scrollTrigger: {
-    trigger: ".about-section",
-    start: "top 60%", // when 60% of the section is in view
-},
-y: 20,
-opacity: 0,
-duration: 0.8,
-stagger: 0.2, // delay between each highlight
-ease: "power2.out"
-});
+if (typeof ScrollTrigger !== 'undefined') {
+    gsap.from(".primary-highlighted-text", {
+        scrollTrigger: {
+            trigger: "#about-me-section",
+            start: "top 40%",
+        },
+        y: 20,
+        opacity: 0,
+        duration: 0.8,
+        stagger: 0.2, // delay between each highlight
+        ease: "power2.out"
+    });
+} else {
+    console.warn('ScrollTrigger not available — skipping primary-highlighted-text scroll animation');
+}
 
 // Initialize AOS (Animate On Scroll) library
 AOS.init();
@@ -100,3 +108,68 @@ function downloadResume() {
     link.click();
     document.body.removeChild(link);
 }
+
+
+// Guard the work/education animation in case ScrollTrigger isn't loaded
+if (typeof ScrollTrigger !== 'undefined') {
+    gsap.from(".work-education-text", {
+        scrollTrigger: {
+            trigger: "#work-education",
+            start: "top 40%",
+        },
+        y: 20,
+        opacity: 0,
+        duration: 0.8,
+        stagger: 0.2,
+        ease: "power2.out"
+    });
+} else {
+    console.warn('ScrollTrigger not available — skipping work-education-text scroll animation');
+}
+
+
+// Read social proof from JSON and populate the testimonial section
+document.addEventListener('DOMContentLoaded', function() {
+    const testimonialContainer = document.querySelector('.social-proof-cards-container');
+    const radios = document.querySelectorAll('.testimonal-select-field input[type="radio"]');
+
+    let testimonials = [];
+
+    // Load JSON data
+    fetch('../assets/index/socialproof.json')
+        .then(response => response.json())
+        .then(data => {
+            testimonials = Object.keys(data)
+                .sort((a, b) => Number(a) - Number(b))
+                .map(k => data[k]);
+            displayTestimonial(0);
+        })
+        .catch(error => console.error('Error fetching social proof:', error));
+
+
+    // Function to display a specific testimonial (0-based index)
+    function displayTestimonial(index) {
+        if (!testimonials[index]) return;
+        const t = testimonials[index];
+        if (!testimonialContainer) return;
+
+        testimonialContainer.innerHTML = `
+            <div class="social-proof-card">
+                <p class="social-proof-quote p1">${t.p1 || ''}</p>
+                <div class="gap-2rem"></div>
+                <p class="social-proof-quote p2">${t.p2 || ''}</p>
+                <div class="gap-2rem"></div>
+                <p class="social-proof-author">${t.author || ''}</p>
+                <p class="social-proof-autor-credits">${t.position || ''}</p>
+            </div>
+        `;
+    }
+
+    // Listen for radio changes (radio values are 1-based in the markup)
+    radios.forEach(radio => {
+        radio.addEventListener('change', () => {
+            const index = parseInt(radio.value, 10) - 1; // convert to 0-based
+            displayTestimonial(index);
+        });
+    });
+});

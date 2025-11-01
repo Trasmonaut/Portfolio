@@ -22,8 +22,8 @@
     --light-gray-text: #d9d9d9;
     --primary-text: #181818;
     --highlight-green: #e9ff32;
-    --primary-background: #f5f5f5;
-    --light-gray-background: #f1f1f1;
+    --primary-background: #f7f7f7;
+    --light-gray-background: #e1e1e1;
 
 }
 
@@ -38,8 +38,8 @@ body{
     display: flex;
     flex-direction: column;
     scroll-behavior: smooth;
-    
 }
+
 .gap-4rem{
     gap: 4rem;
 }
@@ -113,6 +113,7 @@ body{
     line-height: 0.8;
     margin: 0;
     padding: 0;
+    z-index: 100;
     color: var(--primary-text);
     font-family: "Amiko", sans-serif;
     text-transform: uppercase;
@@ -154,7 +155,6 @@ body{
 
 }
 
-/* Modifier: white variant used when hovering the Contact Me button/section */
 
 
 .cursor-dot-white{
@@ -195,14 +195,115 @@ body{
     margin-bottom: 5rem ;
 }   
 
-.random-square{
+.random-square-black{
     width: 50px;
     height: 10px;
     background-color: var(--primary-text);
     position: absolute;
     transform: translate(-50%, -50%);
-    z-index: -1;
+    z-index: 1;
 }
+
+.random-square-white{
+    width: 30px;
+    height: 10px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    z-index: 1;
+    background-color: var(--primary-background);
+}
+
+.random-square-green{
+    background-color: var(--highlight-green);
+    width: 30px;
+    height: 30px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    z-index: 1;
+}
+
+.social-proof-section{
+    background-color: var(--light-gray-background);
+    width: 100%;
+    
+    align-items: center;
+    color: var(--primary-text);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+    padding: 2vw;
+}
+
+.social-proof-card{
+    background-color: var(--primary-background);
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    width: 70vw;
+}
+
+.social-proof-quote{
+    font-family: "Jura", sans-serif;
+    color: var(--primary-text);
+    font-size: 1.4rem;
+    margin: 20px 0;
+    font-weight: 600;
+    line-height: 1.5;
+    padding: 0;
+}
+
+.social-proof-author{
+    font-family: "Jura", sans-serif;
+    color: var(--primary-text);
+    font-size: 1.2rem;
+    margin: 0;
+    font-weight:800;
+    line-height: 1.5;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.social-proof-autor-credits{
+    font-family: "Jura", sans-serif;
+    color: var(--primary-text);
+    font-size: 1rem;
+    margin: 0;
+    font-weight:400;
+    line-height: 1.5;
+    padding: 0;
+}
+
+.testimonal-select-field{
+    display: inline-block;
+    padding-top: 20px;
+}
+
+/* Make the checked (selected) radio button black */
+.testimonal-select-field [type="radio"]:checked + span::after,
+.testimonal-select-field [type="radio"].with-gap:checked + span::after {
+    background-color: black !important;
+    border-color: black !important;
+}
+
+/* Also change the border of the outer circle */
+.testimonal-select-field [type="radio"]:checked + span::before,
+.testimonal-select-field [type="radio"].with-gap:checked + span::before {
+    border-color: black !important;
+    background-color: black !important;
+}
+
+/* Optional: make hover or focus effects black as well */
+.testimonal-select-field [type="radio"]:not(:checked) + span:hover::before {
+    border-color: black !important;
+    background-color: black !important;
+}
+
+
 
 .contact-me{
     background-color: var(--dark-background);
@@ -351,6 +452,8 @@ body{
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    align-items: flex-end;
+    text-align: right;
 }
 
 .work-education-text{
@@ -402,5 +505,21 @@ body{
     .section-title{
         font-size: 2.5rem;
     }
+
+    .work-education-right{
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .social-proof-card{
+        width: 100vw;
+    }
     
+    .contact-me{
+        height: auto;
+    }
+
+    .footer-footer{
+        text-align: center;
+    }
 }
