@@ -102,7 +102,7 @@ AOS.init();
 
 function downloadResume() {
     const link = document.createElement('a');
-    link.href = '../assets/CalebGabrielRamdathResume.pdf';
+    link.href = 'assets/CalebGabrielRamdathResume.pdf';
     link.download = 'CalebGabrielRamdathResume.pdf';
     document.body.appendChild(link);
     link.click();
@@ -136,7 +136,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let testimonials = [];
 
     // Load JSON data
-    fetch('/assets/index/socialproof.json')
+    fetch('assets/index/socialproof.json')
         .then(response => response.json())
         .then(data => {
             testimonials = Object.keys(data)
