@@ -136,7 +136,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let testimonials = [];
 
     // Load JSON data
-    fetch('../assets/index/socialproof.json')
+    fetch('/assets/index/socialproof.json')
         .then(response => response.json())
         .then(data => {
             testimonials = Object.keys(data)
