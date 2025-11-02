@@ -502,8 +502,16 @@ body{
         font-size: 4rem;
     }
 
+    .hero{
+        height: 80vh;
+    }
+
     .section-title{
         font-size: 2.5rem;
+    }
+
+    .social-proof-section{
+        text-align: center;
     }
 
     .work-education-right{
