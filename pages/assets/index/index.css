@@ -52,6 +52,43 @@ body{
     gap: 5rem;
 }
 
+.preloader-wrapper {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--primary-text); /* Background color for preloader */ 
+    z-index: 9999; /* Ensure it covers everything */
+    pointer-events: none; /* Prevent interaction with preloader */  
+    
+    
+}
+
+.preloader-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 3em;
+    color: white; /* Text color for preloader */
+    text-align: center; /* Center the text */
+}
+
+.preloader-subtext{
+    font-family: 'Jura', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    color: white; /* Text color for preloader */
+    text-align: center; /* Center the text */
+    margin-top: 10px;
+}
+
+
+
 .container{
     width: 90%;
     margin: 0 auto;
@@ -307,10 +344,11 @@ body{
 
 .contact-me{
     background-color: var(--dark-background);
-    height: 100vh;
+    height: auto;
     width: 100%;
+    
     color: var(--primary-background);
-    padding: 2vw;
+    padding: 5vw 5vw 2vw 5vw;
 }
 
 .contact-me p{

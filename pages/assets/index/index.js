@@ -1,4 +1,40 @@
 
+//Preloader functionality
+window.addEventListener("load", function () {
+    var preloader = document.querySelector(".preloader-wrapper");
+    if (preloader) {
+        preloader.style.display = "none";
+        triggerPreloaderTransition();
+    }
+
+
+}   );
+
+//Trigger preloader to fade in nad up when pressed
+function triggerPreloaderTransition() {
+    var preloader = document.querySelector(".preloader-wrapper");
+    if (preloader) {
+        preloader.style.display = "flex";
+        setTimeout(function () {
+            preloader.style.display = "none";
+        }, 1000); // Adjust the duration as needed
+
+
+    }
+}
+
+// Smooth scrolling for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+
 document.addEventListener('DOMContentLoaded', function() {   // Initialize sidenav
     var options = {
     edge: 'left',
@@ -60,12 +96,16 @@ document.addEventListener('DOMContentLoaded', function() {
     const originalTexts = titles.map(el => el.textContent.trim());
     titles.forEach(el => el.textContent = '');
 
-   
     gsap.set(titles, {autoAlpha: 0, y: 40});
     const tl = gsap.timeline({defaults: {ease: 'power3.out'}});
 
     // slide-up & fade in with a small stagger
-    tl.to(titles, {duration: 0.6, autoAlpha: 1, y: 0, stagger: 0.08});
+    tl.to(titles,  {duration: 0.6, 
+                    delay: 1, // wait a bit before starting
+                    speed: 0.6, 
+                    autoAlpha: 1, 
+                    y: 0, 
+                    stagger: 0.08});
 
     // scramble-reveal each title, overlapping slightly with the entrance
     titles.forEach((el, i) => {
@@ -73,7 +113,6 @@ document.addEventListener('DOMContentLoaded', function() {
             duration: 1.2,
             scrambleText: {
                 text: originalTexts[i],
-                speed: 0.6,
                 chars: 'lowerCase',
             }
         }, '-=0.6');
