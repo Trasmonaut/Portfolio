@@ -17,7 +17,7 @@ function triggerPreloaderTransition() {
         preloader.style.display = "flex";
         setTimeout(function () {
             preloader.style.display = "none";
-        }, 0); // Adjust the duration as needed
+        }, 1000); // Adjust the duration as needed
 
 
     }
