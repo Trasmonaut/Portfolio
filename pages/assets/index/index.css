@@ -115,6 +115,13 @@ body{
     font-family: "Jura", sans-serif;
 }
 
+.primary-text-white{
+    color: var(--primary-background);
+    font-size: 24px;
+    font-weight: 600;
+    font-family: "Jura", sans-serif;
+}
+
 .primary-highlighted-text{
     color: var(--light-gray-text);
     background-color: var(--primary-text);
@@ -144,6 +151,16 @@ body{
     text-transform: uppercase;
 }
 
+.subtitle-white{
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    color: var(--primary-background);
+    font-family: "Jura", sans-serif;
+    text-transform: uppercase;
+}
+
 .section-title{
     font-size: 2.5rem;
     font-weight: 900;
@@ -156,6 +173,17 @@ body{
     text-transform: uppercase;
 }
 
+.section-title-white{
+    font-size: 2.5rem;
+    font-weight: 900;
+    line-height: 0.8;
+    margin: 0;
+    padding: 0;
+    z-index: 100;
+    color: var(--primary-background);
+    font-family: "Amiko", sans-serif;
+    text-transform: uppercase;
+}
 .contact-me-btn{
     background-color: var(--highlight-green);
     color: var(--primary-text);
@@ -262,7 +290,6 @@ body{
 .social-proof-section{
     background-color: var(--light-gray-background);
     width: 100%;
-    
     align-items: center;
     color: var(--primary-text);
     display: flex;
@@ -341,12 +368,77 @@ body{
 }
 
 
+.project-section{
+    background-color: var(--dark-background);
+    color: var(--primary-background) !important;
+    width: 100%;
+    align-items: center;
+    color: var(--primary-text);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+    padding: 2vw;
+}
+
+.project-left{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+
+}
+.project-image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.project-image{
+    width: 100%;
+    height: auto;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-right{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.project-button, .project-button a{
+    background-color: var(--highlight-green);
+    color: var(--primary-text);
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: "Jura", sans-serif;
+    padding: 12px 24px;
+    border: none;
+    transition: background-color 0.3s ease;
+    justify-self: center;
+    text-transform: uppercase;
+    position: sticky;
+}
+
+.project-button:hover, .project-button:focus, .project-button:active{
+    background-color: var(--highlight-green);
+    color: var(--primary-text);
+    transform: scale(1.05);
+
+}
+
+.project-after{
+    margin-top: 5rem;
+    align-items: center;
+}
 
 .contact-me{
     background-color: var(--dark-background);
     height: auto;
     width: 100%;
-    
     color: var(--primary-background);
     padding: 5vw 5vw 2vw 5vw;
 }
@@ -505,8 +597,8 @@ body{
 }
 
 .resume-button{
-    background-color: var(--primary-black);
-    color: var(--light-gray-text);
+    background-color: var(--highlight-green);
+    color: var(--primary-text);
     font-size: 1.2rem;
     width: fit-content;
     justify-content: center;
@@ -529,9 +621,97 @@ body{
 
 }
 
+/* SPLIT SCROLLING SECTION STYLES for PROJECT PAGE */
+/* Wrapper */
+.split-scroll {
+    display: flex;
+    position: relative;
+    min-height: 100vh; /* enough space for right-side scroll */
+}
 
+/* LEFT — frozen panel */
+.split-scroll .left {
+    width: 20%;
+    padding: 60px 40px;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    background: var(--primary-background);
+    display: flex;
+    z-index: 2;
+}
 
+/* RIGHT SCROLLING AREA */
+.split-scroll .projright {
+    width: 80%;
+    padding: 60px 40px;
+    background: var(--primary-background);
+}
 
+/* CONTENT INSIDE RIGHT SIDE */
+.right-content {
+    display: flex;
+    flex-direction: column;
+    gap:80px;
+}
+
+/* Each scroll box */
+    .right-content .box {
+        background: var(--primary-text);
+        color: var(--primary-background);
+        padding: 20px;
+        font-size: 2rem;
+        border-radius: 16px;
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+.right-content .title{
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    font-family: "Amiko", sans-serif;
+    text-transform: uppercase;
+}
+
+.right-content .main-text{
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.5;
+    font-family: "Jura", sans-serif;
+}
+
+.right-content .tech-stack{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    font-family: "Jura", sans-serif;
+    text-transform: uppercase;
+    color: var(--light-gray-text)
+}
+
+.project-screenshot {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.project-button{
+    background-color: var(--highlight-green);
+    color: var(--primary-text);
+    font-size: 1.2rem;
+    width: fit-content;
+    justify-content: center;
+    align-self: center;
+    font-weight: 600;
+    font-family: "Jura", sans-serif;
+    padding: 12px 24px;
+    border: none;
+    transition: background-color 0.3s ease;
+    justify-self: center;
+    text-transform: uppercase;
+    margin-top: 2rem;
+}
 
 
 
@@ -568,4 +748,45 @@ body{
     .footer-footer{
         text-align: center;
     }
+
+    .primary-text-white{
+        text-align: center;
+    }
+
+    .project-section{
+        align-items: center;
+        text-align: left;
+        
+    }
+
+    .project-button{
+        align-self: center;
+        height: auto;
+        
+        
+    }
+    
+
+
+}
+
+/* MOBILE FIX FOR SPLIT SCROLL */
+@media (max-width: 900px) {
+    .split-scroll {
+        flex-direction: column;
+    }
+
+    .split-scroll .left,
+    .split-scroll .projright {
+        width: 100%;
+        position: relative;
+        height: auto;
+    }
+
+    .split-scroll .projright {
+        width: 100%;
+        padding: 20px;
+    }
+
+ 
 }

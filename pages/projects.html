@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caleb Ramdath</title>
+    <meta name="description" content="Caleb Ramdath's personal portfolio showcasing skills, projects, and contact information.">
+    <meta name="keywords" content="Caleb Ramdath, Trasmonaut, Trasmonaut Caleb Ramdath, Trasmonaut- Caleb Ramdath, Trasmonaut Caleb, Caleb R, Ramdath C, Developer, Programmer, Coder, Software Engineer, Web Developer, Frontend Developer, Backend Developer, Fullstack Developer">
+    <meta name="author" content="Trasmonaut- Caleb Ramdath">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Material Icons font for Materialize -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    
+    <link rel="icon" type="image/x-icon" href="assets/ico.ico">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/index/index.css">
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&family=Anuphan:wght@100..700&family=Jura:wght@300..700&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+    <div class="cursor-dot hide-on-med-and-down"></div>
+
+
+
+    <!-- Preloader (Consider removing for speed, or hide after load with JS) -->
+    <div class="preloader-wrapper" aria-hidden="true">
+        <div class="span">
+        <h1 class="preloader-text">Loading...</h1>
+        <p class="preloader-subtext">Caleb Ramdath</p>
+        </div>
+    </div>
+
+
+
+    <!--Responsive Navbar-->
+
+    <nav class ="z-depth-0">
+    <div class="nav-wrapper">
+        <a href="#contact-me-section" class="brand-logo right">
+            <button class="contact-me-btn">Contact Me</button>
+        </a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons" style="color: var(--primary-text)">menu</i></a>
+        <ul class="left hide-on-med-and-down ">
+            <li><a href="index.html#about-me-section" class = "primary-text">about me</a></li>
+            <li><a href="index.html#projects-section" class = "primary-text">projects</a></li>
+            <li><a href="index.html#social-proof-section" class = "primary-text">social proof</a></li>
+            <li><a href="index.html#work-education" class = "primary-text">work experience / education</a></li>
+        </ul>
+    </div>
+    </nav>
+
+    <ul class="sidenav primary-text" id="mobile-demo">
+        <li><a href="index.html#about-me-mobile" class = "primary-text">about me</a></li>
+        <li><a href="index.html#projects-section" class = "primary-text">projects</a></li>
+        <li><a href="index.html#social-proof-section" class = "primary-text">social proof</a></li>
+        <li><a href="index.html#work-education" class = "primary-text">work experience</a></li>
+        <li><a href="#contact-me-section" class = "primary-text">CONTACT ME</a></li>
+
+    </ul>
+
+    <!--End of Responsive Navbar-->
+
+
+    <!--Hero Section-->
+
+    <div class="hero">
+        <p class = "hero-pretitle">here are some of my</p>
+        <h1 class ="main-title" id ="main-title-first">SELECTED</h1>
+        <h1 class ="main-title" id ="main-title-last">PROJECTS</h1>
+    </div>
+
+
+    <section class="split-scroll"> 
+    
+    <div class="left">
+        <p class = "section-title">Featured Projects</p>
+        <div class="random-square-white"></div>
+    </div>
+
+    <div class="projright">
+        <div class="right-content">
+
+
+        <div class="box hide-on-med-and-down">
+            <div class="row">
+                
+                <div class="col s7 m12">
+                    <p class="title">TT Weather Predict</p>
+                    <p class = "main-text">A predictive weather model for Trinidad and Tobago using historical weather data and XGBoost. Historical weather data was fed in on 16 reigions of Trinidad and Tobago into an XGBOOST model to predict what the future weather given a date and reigon might be in Trinidad and Tobago, based off what is was historically.</p>
+                    <p class = "main-text">This proejct allows persons to have a refrence of what the weather in future might be, down to specific features/aspects for a given date. This would facilitate better planning of daily activies further in the future.</p>
+                    <p class = "tech-stack">Tech Stack: Python, Flask, Jupyter, XGBoost, HTML</p>
+                    <button class="project-button"><a href="https://github.com/Trasmonaut/Predictive-Weather-Analysis-of-Trinidad-and-Tobago-Expanded">View Project</a></button>
+                </div>
+
+                
+                <div class="col s5 m0">
+                        <img src="assets/images/tt-wp-thumbnail.webp" alt="Screenshot of TT Weather Predict" class="project-screenshot">
+                    </div>
+            </div>
+        </div>
+
+        <div class="box hide-on-large-only">
+            <div class="row">
+                
+                <div class="col s12">
+                    <p class="title">TT Weather Predict</p>
+                    <p class = "main-text">A predictive weather model for Trinidad and Tobago using historical weather data and XGBoost. Historical weather data was fed in on 16 reigions of Trinidad and Tobago into an XGBOOST model to predict what the future weather given a date and reigon might be in Trinidad and Tobago, based off what is was historically.</p>
+                    <p class = "main-text">This proejct allows persons to have a refrence of what the weather in future might be, down to specific features/aspects for a given date. This would facilitate better planning of daily activies further in the future.</p>
+                    <p class = "tech-stack">Tech Stack: Python, Flask, Jupyter, XGBoost, HTML</p>
+                    <button class="project-button"><a href="https://github.com/Trasmonaut/Predictive-Weather-Analysis-of-Trinidad-and-Tobago-Expanded">View Project</a></button>
+                </div>
+
+                
+            </div>
+        </div>
+
+        
+        <div class="box hide-on-med-and-down">
+            <div class="row">
+                
+                <div class="col s7">
+                    <p class="title">Java Game Engine</p>
+                    <p class = "main-text"> A small, open-source Java 2D game starter you can copy into new projects. It focuses on clarity and minimal, in order to create a strong foundation for building simple 2D games in Java. Features include a game loop, input handling, sprite rendering, and basic collision detection.</p>
+                    <p class = "tech-stack">Tech Stack: HTML, CSS, JavaScript</p>
+                    <button class="project-button" ><a href = "https://github.com/Trasmonaut/javaGameTemplate">View Project</a></button>
+                </div>
+
+                <div class="col s5">
+                    <img src="assets/images/jge-thumbnail.png" alt="Screenshot of Project 1" class="project-screenshot">
+                </div>
+            </div>
+        </div>
+
+        <div class="box hide-on-large-only">
+            <div class="row">
+                
+                <div class="col s12">
+                    <p class="title">Java Game Engine</p>
+                    <p class = "main-text"> A small, open-source Java 2D game starter you can copy into new projects. It focuses on clarity and minimal, in order to create a strong foundation for building simple 2D games in Java. Features include a game loop, input handling, sprite rendering, and basic collision detection.</p>
+                    <p class = "tech-stack">Tech Stack: HTML, CSS, JavaScript</p>
+                    <button class="project-button" ><a href = "https://github.com/Trasmonaut/javaGameTemplate">View Project</a></button>
+                </div>
+
+                
+            </div>
+        </div>
+
+
+        
+        
+        </div>
+    </div>
+    </section>
+
+    <section class="project-after">
+    <div class ="random-square-black"></div>
+    <div class = "gap-4rem  "></div>    
+    <p class = "section-title center">All Projects</p>
+    </section>
+
+
+    <section class="split-scroll">
+    <div class="left">
+        <p class = "section-title">2025</p>
+        <div class="random-square-white"></div>
+    </div>
+
+    <div class="projright">
+        <div class="right-content">
+
+            <div class="box">
+                <div class="row">
+                    
+                    <div class="col s12">
+                        <p class="title">2d Java DVD Logo Simulator</p>
+                        <p class = "main-text"> A small Java program that simulates the classic bouncing DVD logo animation. Use this program to see a logo bounce around the window, change direction on collisions, and wait for the perfect corner hit.</p>
+                        <p class = "main-text">Status: Completed</p>                    
+                        <p class = "tech-stack">Tech Stack: Java</p>
+                    
+                        <button class="project-button" ><a href = "https://github.com/Trasmonaut/dvd-java-animation">View Project</a></button>
+                    </div>
+
+                
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="row">
+                    
+                    <div class="col s12">
+                        <p class="title">Random Sean Pictures</p>
+                        <p class = "main-text"> RandomSeanPictures is a lighthearted web project that showcases random images of Sean Maharaj every time you visit or refresh the page. Whether you’re a friend, a fan, or just curious, this site brings a bit of fun with every click!</p>
+                        <p class = "main-text">Status: Completed</p>                    
+                        <p class = "tech-stack">Tech Stack: HTML, CSS, JavaScript</p>
+                    
+                        <button class="project-button" ><a href = "https://github.com/Trasmonaut/RandomSeanPictures">View Project</a></button>
+                    </div>
+
+                
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="row">
+                    
+                    <div class="col s12">
+                        <p class="title">A Basic Zombie Survival Game</p>
+                        <p class = "main-text"> A Basic Zombie Survival Game is a simple yet engaging game where players must survive waves of zombies using various weapons and strategies. It offers a fun and challenging experience for fans of survival and action games.</p>
+                        <p class = "main-text">Status: Completed</p>                    
+                        <p class = "tech-stack">Tech Stack: Java</p>
+                    
+                        <button class="project-button" ><a href = "https://github.com/Trasmonaut/A-Basic-Zombie-Survial-Game">View Project</a></button>
+                    </div>
+
+                
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="row">
+                    
+                    <div class="col s12">
+                        <p class="title">HTML Share</p>
+                        <p class = "main-text"> HTML Share is a collection of my custom HTML, CSS, and JavaScript snippets and components. It’s essentially a sandbox and portfolio in one.</p>
+                        <p class = "main-text">Status: Completed</p>                    
+                        <p class = "tech-stack">Tech Stack: HTML, CSS, JavaScript</p>
+                    
+                        <button class="project-button" ><a href = "https://github.com/Trasmonaut/HTML-Share">View Project</a></button>
+                    </div>
+
+                
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="row">
+                    
+                    <div class="col s12">
+                        <p class="title">Big Belly Hosting</p>
+                        <p class = "main-text">A commission for BigBellyHosting on behalf of the BBT Team, commissioned by MadsBSorienstien.</p>
+                        <p class = "main-text">Status: Completed</p>                    
+                        <p class = "tech-stack">Tech Stack: HTML, CSS, JavaScript</p>
+                    
+                        <button class="project-button" ><a href = "https://github.com/Trasmonaut/BigBellyHosting">View Project</a></button>
+                    </div>
+
+                
+                </div>
+            </div>
+            
+            <div class="box">
+                <div class="row">
+                    
+                    <div class="col s12">
+                        <p class="title">Dont-Get-Slimed </p>
+                        <p class = "main-text">A 2D retro inspired Genshin Impact game, focusing on one goal, killing slimes. Players are given a sword and a shield, and forced to fight against oncoming slimes to their death. Dodge against the falling slimes, and kill all the remaining slimes.</p>
+                        <p class = "main-text">Status: Completed</p>                    
+                        <p class = "tech-stack">Tech Stack: Java</p>
+                    
+                        <button class="project-button" ><a href = "https://github.com/Trasmonaut/Dont-Get-Slimed">View Project</a></button>
+                    </div>
+
+                
+                </div>
+            </div>
+
+
+
+
+
+
+
+    
+        </div>
+    </section>
+
+
+    <!--Contact Me Section PC -->
+    <div class="contact-me hide-on-med-and-down" id="contact-me-section">
+        <p class = "section-title">Contact Me</p>
+            <div class="random-square-white"></div>
+    
+        <p class = "subtitle">I'd love to hear from you!</p>
+
+        <div class="row">
+
+            <!--Left Half-->
+            <div class ="col s6">
+                <p class = "primary-text">If you'd like to get in touch, feel free to reach out! I am currently seeking new opportunities and full time employment, in any IT role. Wheather you're a potential employer, collaborator, or just someone who wants to chat, I'm all ears! I'll try my best to get back to you as soon as possible.</p>
+            
+                <div class = "flexicon-container">
+                    <div class="flexicon">
+                        <div class="flexicon-icon">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <div class="flexicon-text">
+                            <a href="https://www.instagram.com/kay.ramdath" target="_blank"><p><i class="fa-brands fa-instagram"></i> Instagram</p></a>
+                        </div>
+                    </div>
+
+            
+                    <div class="flexicon">
+                        <div class="flexicon-icon">
+                            <i class="fa-brands fa-github"></i>
+                        </div>
+                        <div class="flexicon-text">
+                            <a href="https://github.com/Trasmonaut" target="_blank"><p><i class="fa-brands fa-github"></i>  Github</p></a>
+                        </div>
+                    </div> 
+                    
+                    <div class="flexicon">
+                        <div class="flexicon-icon">
+                            <i class="fa-solid fa-link" aria-hidden="true"></i>
+                        </div>
+                        <div class="flexicon-text">
+                            <a href="https://linktr.ee/CalebRamdath" target="_blank" aria-label="Linktree"><p><i class="fa-solid fa-link" aria-hidden="true"></i> Linktree</p></a>
+                        </div>
+                    </div>
+                    
+                    <div class="flexicon">
+                        <div class="flexicon-icon">
+                            <i class="fa-solid fa-inbox"></i>
+                        </div>
+                        <div class="flexicon-text">
+                            <a href="mailto:c.ramdath.26@gmail.com"><p><i class="fa-solid fa-inbox"></i> Gmail</p></a>
+                        </div>
+                    </div>
+
+                    <div class="flexicon">
+                        <div class="flexicon-icon">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+                        <div class="flexicon-text">
+                            <a href="https://linkedin.com/in/caleb-g-ramdath" target="_blank"><p><i class="fa-brands fa-linkedin-in"></i> Linked In</p></a>
+                        </div>
+                    </div>
+
+                    <div class="flexicon">
+                        <div class="flexicon-icon">
+                            <i class="fa-brands fa-whatsapp"></i></i>
+                        </div>
+                        <div class="flexicon-text">
+                            <a href="https://wa.me/18687536045?text=Hello!%20I%20came%20here%20from%20your%20Portfoilio." target="_blank"><p><i class="fa-brands fa-whatsapp"></i> WhatsApp</p></a>
+                        </div>
+                    </div>
+
+                </div>
+            
+            </div> 
+            <!--Right Half-Direction-->
+            <div class ="col s6 quick-links-column">
+                <div data-aos="fade-up">
+                    <p class = "footer-title">Quick Links</p>
+                    <p class = "footer-links"><a href="#home">Home</a></p>
+                    <p class = "footer-links"><a href="#about-me-section">About me</a></p>  
+                    <p class = "footer-links"><a href="#social-proof-section">Social Proof</a></p>  
+                    <p class = "footer-links"><a href="#work-education">Work / Education</a></p>
+                    <p class = "footer-links"><a href="#contact-me-section">Contact Me</a></p>
+                    
+                </div>
+            </div>
+        </div>
+
+        
+        <p class="footer-footer">2025 Developed and Designed by Caleb Ramdath.</p>
+    </div> 
+
+    <!--End of Contact Me Section-->
+    <!--Contact me Mobile Section-->
+
+    <div class="contact-me hide-on-large-only" id="contact-me-section-mobile">
+        <p class = "section-title">Contact Me</p>
+            <div class="random-square-white"></div>
+    
+        <p class = "subtitle">I'd love to hear from you!</p>
+
+        <div class="row">
+
+            <div class ="col s12">
+                <p class = "primary-text">If you'd like to get in touch, feel free to reach out! I am currently seeking new opportunities and full time employment, in any IT role. Wheather you're a potential employer, collaborator, or just someone who wants to chat, I'm all ears! I'll try my best to get back to you as soon as possible.</p>
+            
+                <div class = "flexicon-container">
+                    <div class="flexicon">
+                        <div class="flexicon-icon">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <div class="flexicon-text">
+                            <a href="https://www.instagram.com/kay.ramdath" target="_blank"><p><i class="fa-brands fa-instagram"></i> Instagram</p></a>
+                        </div>
+                    </div>
+
+            
+                    <div class="flexicon">
+                        <div class="flexicon-icon">
+                            <i class="fa-brands fa-github"></i>
+                        </div>
+                        <div class="flexicon-text">
+                            <a href="https://github.com/kayramdath" target="_blank"><p><i class="fa-brands fa-github"></i> GitHub</p></a>
+                        </div>
+                    </div>
+
+                    <div class="flexicon">
+                        <div class="flexicon-icon">
+                            <i class="fa-solid fa-link" aria-hidden="true"></i>
+                        </div>
+                        <div class="flexicon-text">
+                            <a href="https://linktr.ee/CalebRamdath" target="_blank" aria-label="Linktree"><p><i class="fa-solid fa-link" aria-hidden="true"></i> Linktree</p></a>
+                        </div>
+                    </div>
+                    
+
+                    <div class="flexicon">
+                        <div class="flexicon-icon">
+                            <i class="fa-solid fa-inbox"></i>
+                        </div>
+                        <div class="flexicon-text">
+                            <a href="mailto:caleb.ramdath@gmail.com"><p><i class="fa-solid fa-inbox"></i> Email</p></a>
+                        </div>
+                    </div>
+
+                    <div class="flexicon">
+                        <div class="flexicon-icon">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+                        <div class="flexicon-text">
+                            <a href="https://linkedin.com/in/caleb-g-ramdath" target="_blank"><p><i class="fa-brands fa-linkedin-in"></i> Linked In</p></a>
+                        </div>
+
+                    </div>
+
+                    <div class="flexicon">
+                        <div class="flexicon-icon">
+                            <i class="fa-brands fa-whatsapp"></i></i>
+                        </div>
+                        <div class="flexicon-text">
+                            <a href="https://wa.me/18687536045?text=Hello!%20I%20came%20here%20from%20your%20Portfoilio." target="_blank"><p><i class="fa-brands fa-whatsapp"></i> WhatsApp</p></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div> 
+        </div>
+
+        <p class="footer-footer">2025 Developed and Designed by Caleb Ramdath.</p>
+    </div>
+    
+
+
+</body>
+
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <!-- GSAP JS (load before project scripts so plugins are available) -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrambleTextPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+
+    <script src="assets/project/projects.js"></script>
+    
+    
+</body>
+</html>

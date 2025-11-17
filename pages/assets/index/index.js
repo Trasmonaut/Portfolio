@@ -120,7 +120,11 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // GSAP animation for about section highlighted text
-if (typeof ScrollTrigger !== 'undefined') {
+function isMobileViewport() {
+    return window.matchMedia && window.matchMedia('(max-width: 768px)').matches;
+}
+
+if (typeof ScrollTrigger !== 'undefined' && !isMobileViewport()) {
     gsap.from(".primary-highlighted-text", {
         scrollTrigger: {
             trigger: "#about-me-section",
@@ -133,7 +137,14 @@ if (typeof ScrollTrigger !== 'undefined') {
         ease: "power2.out"
     });
 } else {
-    console.warn('ScrollTrigger not available — skipping primary-highlighted-text scroll animation');
+    // On mobile or when ScrollTrigger isn't available, ensure highlighted texts are visible and untransformed
+    document.querySelectorAll('.primary-highlighted-text').forEach(el => {
+        el.style.opacity = '';
+        el.style.transform = '';
+    });
+    if (typeof ScrollTrigger === 'undefined') {
+        console.warn('ScrollTrigger not available — skipping primary-highlighted-text scroll animation');
+    }
 }
 
 // Initialize AOS (Animate On Scroll) library
@@ -150,7 +161,7 @@ function downloadResume() {
 
 
 // Guard the work/education animation in case ScrollTrigger isn't loaded
-if (typeof ScrollTrigger !== 'undefined') {
+if (typeof ScrollTrigger !== 'undefined' && !isMobileViewport()) {
     gsap.from(".work-education-text", {
         scrollTrigger: {
             trigger: "#work-education",
@@ -163,7 +174,14 @@ if (typeof ScrollTrigger !== 'undefined') {
         ease: "power2.out"
     });
 } else {
-    console.warn('ScrollTrigger not available — skipping work-education-text scroll animation');
+    // Ensure work/education text is visible on mobile or when ScrollTrigger isn't available
+    document.querySelectorAll('.work-education-text').forEach(el => {
+        el.style.opacity = '';
+        el.style.transform = '';
+    });
+    if (typeof ScrollTrigger === 'undefined') {
+        console.warn('ScrollTrigger not available — skipping work-education-text scroll animation');
+    }
 }
 
 
@@ -212,3 +230,9 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+
+function openProjectDirectory() {
+    triggerPreloaderTransition();
+    window.location.href = 'projects.html';
+}

@@ -16,7 +16,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
     
-    <link rel="icon" type="image/x-icon" href="assets/images/ico.ico">
+    <link rel="icon" type="image/x-icon" href="assets/ico.ico">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -53,6 +53,7 @@
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons" style="color: var(--primary-text)">menu</i></a>
         <ul class="left hide-on-med-and-down ">
             <li><a href="#about-me-section" class = "primary-text">about me</a></li>
+            <li><a href="#projects-section" class = "primary-text">projects</a></li>
             <li><a href="#social-proof-section" class = "primary-text">social proof</a></li>
             <li><a href="#work-education" class = "primary-text">work experience / education</a></li>
         </ul>
@@ -61,6 +62,7 @@
 
     <ul class="sidenav primary-text" id="mobile-demo">
         <li><a href="#about-me-mobile" class = "primary-text">about me</a></li>
+        <li><a href="#projects-section" class = "primary-text">projects</a></li>
         <li><a href="#social-proof-section" class = "primary-text">social proof</a></li>
         <li><a href="#work-education" class = "primary-text">work experience</a></li>
         <li><a href="#contact-me-section" class = "primary-text">CONTACT ME</a></li>
@@ -107,8 +109,93 @@
 
     <!-- End of About Me Section -->
 
+    <!--Project Showcase Section-->
+    <div class="project-section" id="projects-section">
+    
+        <p class="section-title-white">Project [2]</p>
+        <p class = "primary-text-white">A selection of my recent work</p>
 
+        <div class ="hide-on-small-only">
+            <div class ="project-left">
+
+                <div class = "row">
+
+                    <div class="col s8">
+                    <p class="subtitle-white">TT WEATHER PREDICT</p>
+                    <p class="primary-text-white">A weather prediction machine learning model that forecasts weather conditions in Trinidad and Tobago using historical weather data. Built with Python and scikit-learn, the model utilizes regression algorithms to predict temperature, humidity, and precipitation levels based on past weather patterns.</p>
+                    </div>
+
+                    <div class="col s4 project-image-container">
+                    <img src ="assets/images/tt-wp-thumbnail.webp" alt="Screenshot of TT Weather Predict Project" class="project-image">
+                    </div>
+            </div>
+            </div>
+
+
+            
+            <div class ="project-right">
+
+                <div class = "row">
+                    <div class="col s4 project-image-container">
+                    <img src ="assets/images/jge-thumbnail.png" alt="Screenshot of Personal Portfolio Website" class="project-image">
+                    </div>
+
+                    <div class="col s8">
+                    <p class="subtitle-white">Java Game Engine</p>
+                    <p class="primary-text-white"> A small, open-source Java 2D game starter you can copy into new projects. It focuses on clarity and minimal, in order to create a strong foundation for building simple 2D games in Java. Features include a game loop, input handling, sprite rendering, and basic collision detection.</p>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>  <!--end of hide on small only-->
+
+        <!--Mobile Project Showcase-->
+        <div class ="hide-on-med-and-up">
+            <div class ="project-mobile">
+
+                <div class = "row">
+
+                    <div class="col s12 project-image-container">
+                    <img src ="assets/images/tt-wp-thumbnail.webp" alt="Screenshot of Personal Portfolio Website" class="project-image">
+                    </div>
+
+                    <div class="col s12">
+                    <p class="subtitle-white">TT WEATHER PREDICT</p>
+                    <p class="primary-text-white">A weather prediction machine learning model that forecasts weather conditions in Trinidad and Tobago using historical weather data.</p>
+                    </div>
+
+                </div>
+
+                <div class = "row">
+
+                    <div class="col s12 project-image-container">
+                    <img src ="assets/images/jge-thumbnail.png" alt="Screenshot of Personal Portfolio Website" class="project-image">
+                    </div>
+
+                    <div class="col s12">
+                    <p class="subtitle-white">Java Game Engine</p>
+                    <p class="primary-text-white"> A small, open-source Java 2D game starter you can copy into new projects. It focuses on clarity and minimal, in order to create a strong foundation for building simple 2D games in Java. </p>   
+                    </div>
+
+                </div>
+            </div>
+
+
+
+        </div> 
+
+        <!--End of Mobile Project Showcase-->
+        <button class="project-button" onclick="window.location.href='projects.html'">See More Projects <i class="fa-solid fa-arrow-right"></i></button>
+
+   
+
+    </div>
+
+
+    <!-- End of Project Showcase Section -->
     <!-- Social Proof / Testimonials Section -->
+
 
     <div class="social-proof-section" id="social-proof-section">
         <!-- Content for social proof/testimonials can be added here -->
@@ -137,18 +224,16 @@
                 <label><input class="group1" name="group1" value="3" type="radio" /><span></span></label>
                 <label><input name="group1" type="radio" value="4" /><span></span></label>
                 <label><input name="group1" type="radio" value="5" /><span></span></label>
-                 <label><input name="group1" type="radio" value="6" /><span></span></label>
+                <label><input name="group1" type="radio" value="6" /><span></span></label>
             </form>
 
         </div>
         <p class = "primary-text">More testimonials coming soon...</p>
 
-      
+
 
     </div>
     <!-- End of Social Proof / Testimonials Section -->
-
-
     <!-- Work/ Education Section -->
 
     <div class = "work-education section container" id ="work-education">
@@ -178,8 +263,7 @@
             <div class="random-square-green"></div>
 
             <p class = "subtitle">[1] 2022 - 2025 University of the West Indies St. Augustine <span class="primary-highlighted-text">BSc Information Technology (Second Class Honors)</span></p>
-            <p class = "work-education-text">Including courses in Web Development, Computer Programming, Big Data Analysis, Game Development and Human Computer Interaction. 
-Including Student Course Representative, DCIT Outreach Volunteer</p>
+            <p class = "work-education-text">Including courses in Web Development, Computer Programming, Big Data Analysis, Game Development and Human Computer Interaction. Including Student Course Representative, DCIT Outreach Volunteer</p>
             <div class = "gap-2rem"></div>
 
             <p class = "subtitle">[2] 2020 - 2022 San Fernando Central Secondary School <span class="primary-highlighted-text">CAPE</span></p>
@@ -214,10 +298,11 @@ Including Student Course Representative, DCIT Outreach Volunteer</p>
         </div>
 
         
-        <button class="resume-button" onclick="downloadResume()">Download Resume</button>
+        <button class="resume-button" onclick="downloadResume()">Download Resume <i class="fa-solid fa-download"></i></button>
 
         <div class = "gap-4rem"></div>
     </div>
+
     <!-- End of Work/ Education Section -->
     <!--Contact Me Section PC -->
     <div class="contact-me hide-on-med-and-down" id="contact-me-section">
@@ -310,8 +395,8 @@ Including Student Course Representative, DCIT Outreach Volunteer</p>
     </div> 
 
     <!--End of Contact Me Section-->
-
     <!--Contact me Mobile Section-->
+
     <div class="contact-me hide-on-large-only" id="contact-me-section-mobile">
         <p class = "section-title">Contact Me</p>
             <div class="random-square-white"></div>
