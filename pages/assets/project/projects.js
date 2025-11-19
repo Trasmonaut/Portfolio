@@ -150,3 +150,7 @@ ScrollTrigger.create({
     end: "bottom bottom",
     scrub: true,
 });
+
+
+// Initialize AOS (Animate On Scroll) library
+AOS.init(); 

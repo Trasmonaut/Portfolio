@@ -2,6 +2,7 @@
     "1": {
         "p1": "I have had the distinct pleasure of knowing Caleb for the past three years, and in that time, I have  been continuously impressed by his exceptional talent and character. He possesses a remarkable  skill for web development, backed by a keen and insightful approach to problem-solving.",
         "p2": "What truly sets Caleb apart is not just his technical acumen, but his humble and helpful nature. He is  always willing to share his knowledge and support those around him, making him an invaluable  asset to any team or project. I have no doubt that he will achieve great things, and he has my highest  recommendation. He deserves every bit of the success that will surely come his way.",
+        
         "author": "-Sean Maharaj",
         "position": "ICT Chairperson  Guild of Students, UWI. STA."
     },
@@ -9,18 +10,17 @@
 
     "2": {
         "p1": "I had the pleasure of teaching Caleb for two years while he pursued his degree at the University of the West Indies. He consistently demonstrated dedication, professionalism, and a strong willingness to go above and beyond to assist whenever needed. His work was always of a high standard, reflecting both care and commitment. Caleb was dependable, proactive, and an absolute pleasure to work with. I wholeheartedly recommend him and wish him continued success in all his future endeavors.",
+        
         "author": "-Daniel Rasheed",
-        "position": "Temporary Government Senator of Trinidad and Tobago, TA at UWI StA"
+        "position": "Temporary Government Senator of Trinidad and Tobago, TA at UWI STA"
     },
 
     
     "3": {
         "p1": "For the past three years I have had the opportunity to work with Caleb and I really do appreciate all the help and support he has given me. He is reliable, hardworking and dedicated. He consistently demonstrated professionalism, a strong work ethic and a willingness to go above and beyond to support others.",
-
         "p2": "In addition to being an excellent team player, Caleb has consistently delivered high-quality results. I am confident that Caleb Ramdath will add significant value to any organization he becomes a part of and I wholeheartedly recommend him.",
 
         "author": "-Carissa Deonarine",
-
         "position": "BSc. Information Technology, UWI. STA."
     },
 
@@ -28,23 +28,21 @@
         "p1": "Caleb has been a good friend of mine for several years, during which he has consistently demonstrated qualities I deeply admire. He is exceptionally hardworking, holds himself to high standards, and consistently produces work of outstanding quality. His dedication, reliability, and positive attitude make him someone I have great respect for, both personally and professionally.",
 
         "author": "-Akash Ramlogan",
-
         "position": "BSc. Information Technology Special, UWI. STA."
     },
 
-
     "5": {
+        "p1": "Caleb's work ethic is truly impressive. His dedication to his studies is evident in the way he tackles assignments and projects with tireless enthusiasm. Moreover, his willingness to teach and share his knowledge with you is a testament to his character. The fact that he's helping you understand your work better and inspiring you to strive for excellence is a remarkable characteristic of him that I admire.I hope that he can continue to inspire others with his dedication and passion for learning.",
+
+        "author": "-Samara Jagroop",
+        "position": "BSc. Computer Science, UWI. STA. UWI Robotics Club Event Coordinator 2025-2026"
+    },
+
+
+    "6": {
         "p1": "Working with you has been a genuinely positive experience. You create a comfortable environment, bring great energy, and have a wonderful balance of humor, intelligence, and professionalism. You’re always approachable, supportive, and willing to go the extra mile. From the very beginning, you’ve been friendly, understanding, and easy to connect with — which makes all the difference.",
 
         "author": "-Nirvana Kandhai",
-        
-        "position": "Resident Vagrant of DCIT"
-    },
-
-    "6": {
-        "p1": "Caleb's work ethic is truly impressive. His dedication to his studies is evident in the way he tackles assignments and projects with tireless enthusiasm. Moreover, his willingness to teach and share his knowledge with you is a testament to his character. The fact that he's helping you understand your work better and inspiring you to strive for excellence is a remarkable aspect of your relationship. It's great to see you looking up to him as a role model and working towards your own goals with similar dedication.",
-        "author": "-Samara Jagroop",
-
-        "position": "BSc. Computer Science, UWI. STA. UWI Robotics Club Event Coordinator 2025-2026"
+        "position": "Resident Vagrant of DCIT, personal friend."
     }
 }
