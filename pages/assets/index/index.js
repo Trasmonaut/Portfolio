@@ -125,7 +125,7 @@ function isMobileViewport() {
 }
 
 if (typeof ScrollTrigger !== 'undefined' && !isMobileViewport()) {
-    gsap.from(".primary-highlighted-text", {
+    gsap.from(".primary-highlighted-text",  {
         scrollTrigger: {
             trigger: "#about-me-section",
             start: "top 40%",
@@ -184,6 +184,27 @@ if (typeof ScrollTrigger !== 'undefined' && !isMobileViewport()) {
     }
 }
 
+// GSAP animation for Contact section (primary white text / subtitles)
+if (typeof ScrollTrigger !== 'undefined' && !isMobileViewport()) {
+    gsap.from("#contact-me-section", {
+        scrollTrigger: {
+            trigger: "#contact-me-section",
+            start: "top 60%",
+        },
+        y: 18,
+        opacity: 0,
+        duration: 0.8,
+        stagger: 0.12,
+        ease: "power2.out"
+    });
+} else {
+    // Ensure contact-me texts are visible on mobile or when ScrollTrigger isn't available
+    document.querySelectorAll('#contact-me-section .section-title, #contact-me-section .subtitle, #contact-me-section .primary-text').forEach(el => {
+        el.style.opacity = '';
+        el.style.transform = '';
+    });
+}
+
 
 // Read social proof from JSON and populate the testimonial section
 document.addEventListener('DOMContentLoaded', function() {
@@ -235,4 +256,31 @@ document.addEventListener('DOMContentLoaded', function() {
 function openProjectDirectory() {
     triggerPreloaderTransition();
     window.location.href = 'projects.html';
+
+    
 }
+
+if (typeof ScrollTrigger !== 'undefined' && !isMobileViewport()) {
+    gsap.from(".primary-highlighted-text-white",  {
+        scrollTrigger: {
+            trigger: "#projects-section",
+            start: "top 40%",
+        },
+        y: 20,
+        opacity: 0,
+        duration: 0.8,
+        stagger: 0.2, // delay between each highlight
+        ease: "power2.out"
+    });
+} else {
+    // On mobile or when ScrollTrigger isn't available, ensure highlighted texts are visible and untransformed
+    document.querySelectorAll('.primary-highlighted-text, .primary-highlighted-text-white').forEach(el => {
+        el.style.opacity = '';
+        el.style.transform = '';
+    });
+    if (typeof ScrollTrigger === 'undefined') {
+        console.warn('ScrollTrigger not available — skipping primary-highlighted-text scroll animation');
+    }
+}
+
+

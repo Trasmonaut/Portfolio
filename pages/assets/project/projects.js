@@ -154,3 +154,29 @@ ScrollTrigger.create({
 
 // Initialize AOS (Animate On Scroll) library
 AOS.init(); 
+
+
+
+
+
+// GSAP animation for Contact section (primary white text / subtitles)
+
+if (typeof ScrollTrigger !== 'undefined' && !isMobileViewport()) {
+    gsap.from("#contact-me-section", {
+        scrollTrigger: {
+            trigger: "#contact-me-section",
+            start: "top 60%",
+        },
+        y: 18,
+        opacity: 0,
+        duration: 0.8,
+        stagger: 0.12,
+        ease: "power2.out"
+    });
+} else {
+    // Ensure contact-me texts are visible on mobile or when ScrollTrigger isn't available
+    document.querySelectorAll('#contact-me-section .section-title, #contact-me-section .subtitle, #contact-me-section .primary-text').forEach(el => {
+        el.style.opacity = '';
+        el.style.transform = '';
+    });
+}
