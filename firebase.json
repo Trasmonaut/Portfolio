@@ -7,35 +7,28 @@
       "**/node_modules/**"
     ],
 
-    "redirects": [
-      {
-        "source": "/projects.html",
-        "destination": "/project",
-        "type": 301
-      },
-
-      {
-        "source": "/index.html",
-        "destination": "/index",
-        "type": 301
-      }
-
-      
-
-    ],
     "rewrites": [
       {
-        "source": "/project",
-        "destination": "/projects.html"
-      
+        "source": "/sitemap.xml",
+        "destination": "/sitemap.xml"
       },
-
       {
-        "source": "/index",
-        "destination": "/index.html"
+        "source": "/projects",
+        "destination": "/projects.html"
+      }
+    ],
+
+    "redirects": [
+      {
+        "source": "/index.html",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/projects.html",
+        "destination": "/projects",
+        "type": 301
       }
     ]
-
-
   }
 }
