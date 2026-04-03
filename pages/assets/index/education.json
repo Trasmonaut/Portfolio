@@ -1,0 +1,41 @@
+[
+    {
+        "date": "2022 - 2025",
+        "institution": "University of the West Indies St. Augustine",
+        "highlighted": "BSc Information Technology (Second Class Honors)",
+        "details": [
+            "Including courses in Web Development, Computer Programming, Big Data Analysis, Game Development and Human Computer Interaction. Including Student Course Representative, DCIT Outreach Volunteer"
+        ]
+    },
+    {
+        "date": "2020 - 2022",
+        "institution": "San Fernando Central Secondary School",
+        "highlighted": "CAPE",
+        "details": [
+            "Including Cape passes Physics, Information Technology, Chemistry"
+        ]
+    },
+    {
+        "date": "2015 - 2020",
+        "institution": "San Fernando Central Secondary School",
+        "highlighted": "CSEC",
+        "details": [
+            "Including Csec passes Mathematics, English, Information Technology, Additional Mathematics"
+        ]
+    },
+    {
+        "date": "2013 - 2018",
+        "institution": "Trinity Music College London",
+        "details": [
+            "Grade 1,2,3,4 Theory of Music, Grade 1 Piano"
+        ]
+    },
+    {
+        "date": "2014",
+        "institution": "University of the West Indies Open Campus",
+        "highlighted": "Comic Book Art"
+    }
+]
+
+
+

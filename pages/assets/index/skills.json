@@ -1,0 +1,28 @@
+[
+
+    {
+        "title": "Programming and Development",
+    "skills": "Java, Python, HTML, CSS, JS, Web Design, UI/UX Design, Bash Scripting"
+
+    },
+
+    {"title": "Other Technical Skills",
+    "skills": "Photography, Digital Art, Novice Mechanic, Video Editing, AV Control and Configuration"
+    },
+
+    {
+        "title": "Tools, Frameworks and Platforms",
+        "skills": "Git, GitHub, VS Code, Flask, MaterializeCSS, GSAP, Linux, Windows, Figma, Krita, Canva"
+    },
+
+    {
+        "title": "Soft Skills",
+        "skills": "Critical Thinking, Attention to Detail, Time Management, Collaboration, Communication, Problem Solving, Teamwork, Peer Tutoring"
+    },
+
+    {
+        "title": "Languages",
+        "skills": "English (Fluent)"
+    }
+
+]

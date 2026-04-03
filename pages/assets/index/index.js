@@ -205,6 +205,113 @@ if (typeof ScrollTrigger !== 'undefined' && !isMobileViewport()) {
     });
 }
 
+// Load work data from JSON and populate the section
+document.addEventListener('DOMContentLoaded', function () {
+    fetch('assets/index/work.json')
+        .then(response => response.json())
+        .then(data => {
+            const container = document.querySelector('.work-container');
+
+            if (container) {
+                data.forEach((item, index) => {
+                    const card = document.createElement('div');
+
+                    // handle inconsistent field names
+                    const org = item.highlighted || item.organization || '';
+
+                    // build details (if any)
+                    let detailsHTML = '';
+                    if (item.details) {
+                        detailsHTML = item.details
+                            .map(detail => `<p class="work-education-text">${detail}</p>`)
+                            .join('');
+                    }
+
+                    card.innerHTML = `
+                        <p class="subtitle">
+                            [${index + 1}] ${item.date} 
+                            <span class="primary-highlighted-text">${org}</span>
+                        </p>
+
+                        <p class="work-education-text">
+                            ${item.role || ''}
+                        </p>
+
+                        ${detailsHTML}
+                    `;
+
+                    // spacing (JS-only as requested)
+                    card.style.marginBottom = "2rem";
+
+                    container.appendChild(card);
+                });
+            }
+        })
+        .catch(error => console.error('Error fetching work data:', error));
+});
+
+// Load education data from JSON and populate the section
+document.addEventListener('DOMContentLoaded', function () {
+    fetch('assets/index/education.json')
+        .then(response => response.json())
+        .then(data => {
+            const container = document.querySelector('.work-education-container');
+
+            if (container) {
+                data.forEach((item, index) => {
+                    const card = document.createElement('div');
+                    card.classList.add('work-education-item');
+
+                    // ✅ Add spacing directly with JS
+                    card.style.marginBottom = "2rem";
+
+                    card.innerHTML = `
+                        <p class="subtitle">
+                            [${index + 1}] ${item.date} ${item.institution}
+                            ${item.highlighted 
+                                ? `<span class="primary-highlighted-text">${item.highlighted}</span>` 
+                                : ''}
+                        </p>
+
+                        ${
+                            item.details 
+                            ? `<p class="work-education-text">${item.details[0]}</p>` 
+                            : ''
+                        }
+                    `;
+
+                    container.appendChild(card);
+                });
+            }
+        })
+        .catch(error => console.error('Error fetching education data:', error));
+});
+
+// skills section: read from JSON and populate skill bars
+document.addEventListener('DOMContentLoaded', function () {
+    fetch('assets/index/skills.json')
+        .then(response => response.json())
+        .then(data => {
+            const container = document.querySelector('.skills-container');
+
+            if (container) {
+                data.forEach(item => {
+                    const row = document.createElement('div');
+
+                    row.innerHTML = `
+                        <p class="subtitle">${item.title}</p>
+                        <span class="work-education-text">${item.skills}</span>
+                    `;
+
+                    // spacing (JS-only as requested)
+                    row.style.marginBottom = "1.5rem";
+
+                    container.appendChild(row);
+                });
+            }
+        })
+        .catch(error => console.error('Error fetching skills data:', error));
+});
 
 // Read social proof from JSON and populate the testimonial section
 document.addEventListener('DOMContentLoaded', function() {

@@ -171,6 +171,7 @@ body{
     color: var(--primary-background);
     font-family: "Jura", sans-serif;
     text-transform: uppercase;
+    
 }
 
 .section-title{
@@ -179,7 +180,7 @@ body{
     line-height: 0.8;
     margin: 0;
     padding: 0;
-    z-index: 100;
+    z-index: 1000;
     color: var(--primary-text);
     font-family: "Amiko", sans-serif;
     text-transform: uppercase;
