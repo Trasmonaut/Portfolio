@@ -46,9 +46,9 @@
 
     <!--Responsive Navbar-->
 
-    <nav class ="z-depth-0">
+    <nav class ="z-depth-0 transparent">
     
-    <div class="nav-wrapper">
+    <div class="nav-wrapper valign-wrapper ">
         <a href="#contact-me-section" class="brand-logo right">
             <button class="contact-me-btn">Contact Me</button>
         </a>
@@ -72,16 +72,22 @@
     </ul>
 
     <!-- Hero Section -->
-    <div class="hero" id="hero">
-        <p class = "hero-pretitle">hello my name is</p>
-        <h1 class ="main-title" id ="main-title-first">CALEB</h1>
-        <h1 class ="main-title" id ="main-title-last">RAMDATH</h1>
-        <p class ="hero-pretitle">Software Developer | Designer | Photographer</p>
+    <div class="hero section" id="hero">
+        <div>
+        <p class="section-mini-right dark">.hero</p>
+        </div>
+
+        <p class="hero-pretitle">hello my name is</p>
+        <h1 class="main-title">CALEB</h1>
+        <h1 class="main-title">RAMDATH</h1>
+        <p class="hero-pretitle">Software Developer | Designer | Photographer</p>
+
     </div>
 
 
     <!-- About Me Section -->
-    <div class="about-me container hide-on-small-only" id = "about-me-section">
+    <div class="about-me container section hide-on-small-only" id="about-me-section">
+
         <div class = "row">
             <div class="col s3">
                 <h2 class="section-title">About Me</h2>
@@ -98,6 +104,9 @@
                 </div>
         </div>
 
+        <div>
+            <p class="section-mini-right dark">.about</p>
+            </div>
     </div>
 
     <div class="about-me container hide-on-med-and-up" id = "about-me-mobile">
@@ -113,8 +122,10 @@
 
     <!--Project Showcase Section-->
     <div class="project-section" id="projects-section">
-    
         <p class="section-title-white">Projects [2]</p>
+        <div>
+        <p class="section-mini-right ">.projects</p>
+        </div>
         <p class = "primary-text-white">A selection of my recent work</p>
 
         <div class ="hide-on-small-only">
@@ -155,6 +166,7 @@
         <!--Mobile Project Showcase-->
         <div class ="hide-on-med-and-up">
             <div class ="project-mobile">
+            
 
                 <div class = "row">
 
@@ -164,7 +176,7 @@
 
                     <div class="col s12">
                     <p class="subtitle-white">TT WEATHER PREDICT</p>
-                    <p class="primary-text-white">A <span class = "primary-highlighted-text-white">weather prediction machine learning model that forecasts weather conditions in Trinidad and Tobago</span> using historical weather data. Built with Python and scikit-learn, the model utilizes regression algorithms to predict temperature, humidity, and precipitation levels based on past weather patterns.The <span class="primary-highlighted-text-white">web app allows users to predict future weather</span>   in Trinidad and Tobago  <span class ="primary-highlighted-text-white">with a 98% accuracy, for different regions of the country.</span></p>
+                    <p class="primary-text-white">A <span class = "primary-highlighted-text-white">weather prediction machine learning model that forecasts weather conditions in Trinidad and Tobago</span> using historical weather data. The web app allows users to predict future weather in Trinidad and Tobago with a 98% accuracy, for different regions of the country.</p>
                     </div>
 
                 </div>
@@ -190,16 +202,14 @@
         <!--End of Mobile Project Showcase-->
         <button class="project-button" onclick="window.location.href='projects.html'">See More Projects <i class="fa-solid fa-arrow-right"></i></button>
 
-   
-
     </div>
 
 
     <!-- End of Project Showcase Section -->
     <!-- Social Proof / Testimonials Section -->
 
-
     <div class="social-proof-section" id="social-proof-section">
+      
         <!-- Content for social proof/testimonials can be added here -->
         <h2 class="section-title">Social Proof</h2>
         <div class="random-square-green"></div>
@@ -233,7 +243,9 @@
         <p class = "primary-text">More testimonials coming soon...</p>
 
 
-
+        <div>
+            <p class="section-mini dark">.social proof</p>
+        </div>
     </div>
     <!-- End of Social Proof / Testimonials Section -->
     <!-- Work/ Education Section -->
@@ -244,14 +256,21 @@
         <div class="random-square-green"></div>
         <div class="section-title">Experience</div>
 
+        <div>
+            <p class="section-mini-right dark">.work.json</p>
+        </div>
+
         <!-- JS will populate here -->
         <div class="work-container"></div>
     </div>
 
-
         <div class="work-education-right right">
             <h2 class="section-title">Education</h2>
             <div class="random-square-green"></div>
+
+            <div>
+                <p class="section-mini dark">.education.json</p>
+            </div>
 
             <!-- JS will populate this -->
             <div class="work-education-container"></div>
@@ -261,6 +280,10 @@
 
         <div class = "work-education-left">
             <div class="skills-section">
+
+                <div>
+                    <p class="section-mini-right dark">.skills.json</p>
+                </div>
                 
                 <h2 class="section-title">Skills</h2>
                 
@@ -280,6 +303,9 @@
     <!-- End of Work/ Education Section -->
     <!--Contact Me Section PC -->
     <div class="contact-me " id="contact-me-section">
+        <div>  
+            <p class="section-mini-right light">.call me pls</p>
+        </div>
         <div class = "hide-on-med-and-down">
             <p class = "section-title">Contact Me</p>
                 <div class="random-square-white"></div>

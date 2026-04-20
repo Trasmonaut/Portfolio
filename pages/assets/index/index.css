@@ -90,10 +90,8 @@ body{
     margin-top: 10px;
 }
 
-
-
 .container{
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
@@ -104,12 +102,39 @@ body{
 }
 .hide-cursor {
     cursor: none;
+} 
+
+.nav-wrapper {
+    width: 95%;
+    margin: 20px auto;
+    background-color: #fff !important;
+    box-shadow: none;
+    border: 1px solid var(--primary-black);
+    border-radius: 5px;
 }
-.nav-wrapper{
-    background-color: var(--primary-background);
-    box-shadow:none;
+
+.contact-me-btn{
+    background-color: var(--highlight-green);
+    color: var(--primary-text);
+    font-size: 24px;
+    font-weight: 600;
+    font-family: "Jura", sans-serif;
+    padding: 8px 24px;
+    border: none;
+    text-transform: uppercase;
+    height: auto;
+    display: flex;             
+    align-items: center;
+    justify-content: center;
 
 }
+
+.contact-me-btn:hover, .contact-me-btn:focus, .contact-me-btn:active{
+    background-color: var(--highlight-green);
+    color: var(--primary-text);
+    transform: scale(1.05);
+}
+
 
 .primary-text{
     color: var(--primary-text);
@@ -197,26 +222,6 @@ body{
     font-family: "Amiko", sans-serif;
     text-transform: uppercase;
 }
-.contact-me-btn{
-    background-color: var(--highlight-green);
-    color: var(--primary-text);
-    font-size: 1.2rem;
-    font-weight: 600;
-    font-family: "Jura", sans-serif;
-    padding: 12px 24px;
-    border: none;
-    transition: background-color 0.3s ease;
-    justify-self: center;
-    text-transform: uppercase;
-    position: sticky;
-}
-
-.contact-me-btn:hover, .contact-me-btn:focus, .contact-me-btn:active{
-    background-color: var(--highlight-green);
-    color: var(--primary-text);
-    transform: scale(1.05);
-
-}
 
 .cursor-dot {
     position: fixed;
@@ -233,8 +238,6 @@ body{
 
 }
 
-
-
 .cursor-dot-white{
     position: fixed;
     top: 0;
@@ -247,6 +250,48 @@ body{
     pointer-events: none; /* Allows clicks to pass through the dot */
     transition: transform 0.1s ease;
     z-index: 1000; /* Ensures the dot is on top of other elements */
+}
+
+/* Anchor system */
+.section {
+    position: relative;
+}
+
+/* Mini label */
+.section-mini {
+    position: absolute;
+    left: 2%;
+    font-size: 12px;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: "Amiko";
+
+    z-index: 100;
+    pointer-events: none;
+    margin: 0;
+    line-height: 1;
+}
+.section-mini-right{
+    position: absolute;
+    right: 2%;
+    font-size: 12px;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: "Amiko";
+
+    z-index: 100;
+    pointer-events: none;
+    margin: 0;
+    line-height: 1;
+}
+
+/* Color variants */
+.section-mini.dark {
+    color: var(--primary-text);
+}
+
+.section-mini.light {
+    color: var(--primary-background);
 }
 
 .hero{
