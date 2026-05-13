@@ -138,7 +138,7 @@ body{
 
 .primary-text{
     color: var(--primary-text);
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600;
     font-family: "Jura", sans-serif;
 }
@@ -146,7 +146,7 @@ body{
 
 .primary-text-white{
     color: var(--primary-background);
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600;
     font-family: "Jura", sans-serif;
 }
@@ -154,7 +154,7 @@ body{
 .primary-highlighted-text{
     color: var(--light-gray-text);
     background-color: var(--primary-text);
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600;
     font-family: "Jura", sans-serif;
 }
@@ -162,7 +162,7 @@ body{
 .primary-highlighted-text-white{
     color: var(--primary-black);
     background-color: var(--primary-background);
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600;
     font-family: "Jura", sans-serif;
 }
@@ -306,7 +306,7 @@ body{
 
 .hero-pretitle{
     color: var(--secondary-black);
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600;
     font-family: "Jura", sans-serif;
 }
