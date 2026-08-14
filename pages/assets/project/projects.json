@@ -1,0 +1,75 @@
+[
+    {
+        "showcase-title": "TT Weather Predict",
+        "showcase-mainDescription": "A predictive weather model for Trinidad and Tobago using historical weather data and XGBoost. Historical weather data was fed in on 16 regions of Trinidad and Tobago into an XGBOOST model to predict what the future weather given a date and region might be in Trinidad and Tobago, based off what it was historically. This project allows persons to have a reference of what the weather in future might be, down to specific features/aspects for a given date. This would facilitate better planning of daily activities further in the future.",
+        "showcase-techStack": ["Python", "Flask", "Jupyter", "XGBoost", "HTML"],
+        "showcase-status": "Completed- Awiting further development",
+        "showcase-link": "https://github.com/Trasmonaut/Predictive-Weather-Analysis-of-Trinidad-and-Tobago-Expanded",
+        "showcase-image": "assets/images/tt-wp-thumbnail.webp"
+    },
+    {
+        "showcase-title": "Java Game Engine",
+        "showcase-mainDescription": "A small, open-source Java 2D game starter you can copy into new projects. It focuses on clarity and minimalism, in order to create a strong foundation for building simple 2D games in Java. Features include a game loop, input handling, sprite rendering, and basic collision detection.",
+        "showcase-techStack": ["Java"],
+        "showcase-status": "On-Going",
+        "showcase-link": "https://github.com/Trasmonaut/javaGameTemplate",
+        "showcase-image": "assets/images/jge-thumbnail.png"
+    },
+
+    {
+        "title": "Abigail Portfolio Website",
+        "mainDescription": "A personal portfolio website built using HTML, CSS, and JavaScript. This was a bit of fun project I did for my friend Abigail, to create a simple website in the style of digital scrapbook.",
+        "techStack": ["HTML", "CSS", "JavaScript"],
+        "status": "Completed",
+        "year": "2026",
+        "link": "https://github.com/Trasmonaut/Abigail-Portfolio-Website"
+    },
+    {
+        "title": "2d Java DVD Logo Simulator",
+        "mainDescription": "A small Java program that simulates the classic bouncing DVD logo animation. Use this program to see a logo bounce around the window, change direction on collisions, and wait for the perfect corner hit.",
+        "techStack": ["Java"],
+        "status": "Completed",
+        "year": "2025",
+        "link": "https://github.com/Trasmonaut/dvd-java-animation"
+    },
+    {
+        "title": "Random Sean Pictures",
+        "mainDescription": "RandomSeanPictures is a lighthearted web project that showcases random images of Sean Maharaj every time you visit or refresh the page. Whether you’re a friend, a fan, or just curious, this site brings a bit of fun with every click!",
+        "techStack": ["HTML", "CSS", "JavaScript"],
+        "status": "Completed",
+        "year": "2025",
+        "link": "https://github.com/Trasmonaut/RandomSeanPictures"
+    },
+    {
+        "title": "A Basic Zombie Survival Game",
+        "mainDescription": "A Basic Zombie Survival Game is a simple yet engaging game where players must survive waves of zombies using various weapons and strategies. It offers a fun and challenging experience for fans of survival and action games.",
+        "techStack": ["Java"],
+        "status": "Completed",
+        "year": "2025",
+        "link": "https://github.com/Trasmonaut/A-Basic-Zombie-Survial-Game"
+    },
+    {
+        "title": "HTML Share",
+        "mainDescription": "HTML Share is a collection of my custom HTML, CSS, and JavaScript snippets and components. It’s essentially a sandbox and portfolio in one.",
+        "techStack": ["HTML", "CSS", "JavaScript"],
+        "status": "Completed",
+        "year": "2025",
+        "link": "https://github.com/Trasmonaut/HTML-Share"
+    },
+    {
+        "title": "Big Belly Hosting",
+        "mainDescription": "A commission for BigBellyHosting on behalf of the BBT Team, commissioned by MadsBSorienstien.",
+        "techStack": ["HTML", "CSS", "JavaScript"],
+        "status": "Completed",
+        "year": "2025",
+        "link": "https://github.com/Trasmonaut/BigBellyHosting"
+    },
+    {
+        "title": "Dont-Get-Slimed",
+        "mainDescription": "A 2D retro inspired Genshin Impact game, focusing on one goal, killing slimes. Players are given a sword and a shield, and forced to fight against oncoming slimes to their death. Dodge against the falling slimes, and kill all the remaining slimes. Built using a modification of the Java Game Engine.",
+        "techStack": ["Java"],
+        "status": "Completed",
+        "year": "2025",
+        "link": "https://github.com/Trasmonaut/Dont-Get-Slimed"
+    }
+]

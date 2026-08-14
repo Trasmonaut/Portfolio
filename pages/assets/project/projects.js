@@ -1,4 +1,95 @@
 
+// Dynamically load and render projects from projects.json using DOM methods (reliable like index.js)
+document.addEventListener('DOMContentLoaded', function () {
+    console.log('[projects.js] DOMContentLoaded fired');
+        fetch('assets/project/projects.json')
+            .then(response => response.json())
+            .then(projects => {
+                console.log('[projects.js] Projects loaded:', projects);
+
+                // Separate showcase and regular projects
+                const showcaseProjects = projects.filter(p => p['showcase-title']);
+                const regularProjects = projects.filter(p => p['title']);
+
+                // Render showcase projects
+                const showcaseContainer = document.getElementById('showcase-projects-container');
+                if (showcaseContainer) {
+                    showcaseContainer.innerHTML = '';
+                    showcaseProjects.forEach(project => {
+                        // Desktop
+                        const box = document.createElement('div');
+                        box.className = 'box hide-on-med-and-down';
+                        box.innerHTML = `
+                            <div class="row">
+                                <div class="col s7">
+                                    <p class="title">${project['showcase-title']}</p>
+                                    <p class="main-text">${project['showcase-mainDescription']}</p>
+                                    <p class="main-text">Status: ${project['showcase-status']}</p>
+                                    <p class="tech-stack">Tech Stack: ${project['showcase-techStack'] ? project['showcase-techStack'].join(', ') : ''}</p>
+                                    <button class="project-button"><a href="${project['showcase-link']}" target="_blank">View Project</a></button>
+                                </div>
+                                <div class="col s5">
+                                    <img src="${project['showcase-image']}" alt="Screenshot of ${project['showcase-title']}" class="project-screenshot">
+                                </div>
+                            </div>
+                        `;
+                        showcaseContainer.appendChild(box);
+                        box.style.opacity = "1";
+                        box.style.transform = "none";
+                        box.style.transition = "none";
+
+                        // Mobile
+                        const boxMobile = document.createElement('div');
+                        boxMobile.className = 'box hide-on-large-only';
+                        boxMobile.innerHTML = `
+                            <div class="row">
+                                <div class="col s12">
+                                    <p class="title">${project['showcase-title']}</p>
+                                    <p class="main-text">${project['showcase-mainDescription']}</p>
+                                    <p class="main-text">Status: ${project['showcase-status']}</p>
+                                    <p class="tech-stack">Tech Stack: ${project['showcase-techStack'] ? project['showcase-techStack'].join(', ') : ''}</p>
+                                    <button class="project-button"><a href="${project['showcase-link']}" target="_blank">View Project</a></button>
+                                </div>
+                            </div>
+                        `;
+                        showcaseContainer.appendChild(boxMobile);
+                        boxMobile.style.opacity = "1";
+                        boxMobile.style.transform = "none";
+                        boxMobile.style.transition = "none";
+                    });
+                }
+
+                // Group regular projects by year
+                const years = ['2026', '2025'];
+                years.forEach(year => {
+                    const container = document.getElementById(`all-projects-container-${year}`);
+                    if (container) {
+                        container.innerHTML = '';
+                        regularProjects.filter(p => p.year === year).forEach(project => {
+                            const box = document.createElement('div');
+                            box.className = 'box';
+                            box.innerHTML = `
+                                <div class="row">
+                                    <div class="col s12">
+                                        <p class="title">${project.title}</p>
+                                        <p class="main-text">${project.mainDescription}</p>
+                                        <p class="main-text">Status: ${project.status}</p>
+                                        <p class="tech-stack">Tech Stack: ${project.techStack ? project.techStack.join(', ') : ''}</p>
+                                        <button class="project-button"><a href="${project.link}" target="_blank">View Project</a></button>
+                                    </div>
+                                </div>
+                            `;
+                            container.appendChild(box);
+                            box.style.opacity = "1";
+                            box.style.transform = "none";
+                            box.style.transition = "none";
+                        });
+                    }
+                });
+            })
+            .catch(error => console.error('Error fetching projects data:', error));
+});
+
 //Preloader functionality
 window.addEventListener("load", function () {
     var preloader = document.querySelector(".preloader-wrapper");
