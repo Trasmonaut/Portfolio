@@ -1,0 +1,57 @@
+[
+    {
+        "number": 1,
+        "name": "Portfolio Website",
+        "description": "A personal portfolio website showcasing my projects and skills.",
+        "type": "Web Development"
+
+    },
+    {
+        "number": 2,
+        "name": "Project EK3",
+        "description": "Rebuilding and Upgrading my 1998 Ek3 Honda Civic, including engine modifications, suspension upgrades, and aesthetic enhancements. B16A VTEC B20B Swap, Custom Exhaust, Coilovers, 5 speed Inegra cut manual transmission, and more.",
+        "type": "Mechanical"
+    },
+    {
+        "number": 3,
+        "name": "Tailwind CSS Project",
+        "description": "Learning Tailwind CSS through building a basic application to enhance my front-end development skills.",
+        "type": "Web Development"
+    },
+    {
+        "number": 4,
+        "name": "React Project",
+        "description": "Learning React through building a basic application to enhance my front-end development skills.",
+        "type": "Web Development"
+    },
+    {
+        "number": 5,
+        "name": "Cassidy- Inventory Management System",
+        "description": "A comprehensive inventory management system designed to streamline and optimize inventory tracking, control, and reporting for businesses. This system allows users to efficiently manage stock levels, track product movements, generate reports, and maintain accurate records of inventory data.",
+        "type": "Software Development, Web Development"
+    },
+    {
+        "number": 6,
+        "name": "NOVA- Inventory Management System (Mobile App)",
+        "description": "Job application tracker software. Allows users to track their job applications, set reminders for follow-ups, and manage their job search process effectively. The app provides a user-friendly interface to input and organize application details, including company names, positions applied for, application dates, and status updates.",
+        "type": "Software Development, Web Development"
+    },
+    {
+        "number": 7,
+        "name": "Retro Java Game",
+        "description": "A retro-style game built with Java, featuring pxiel art graphics, simple mechanics, and nostalgic gameplay reminiscent of classic arcade games.",
+        "type": "Game Development"
+    },
+    {
+        "number": 8,
+        "name": "Youtube Channel",
+        "description": "A programming Youtube channel where I build sh*t and talk about programming.",
+        "type": "Youtube Channel"
+    }
+
+
+
+
+
+
+]
