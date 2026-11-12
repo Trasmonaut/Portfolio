@@ -1,29 +1,58 @@
 [
     {
-        "date": "2025 June - Present",
-        "organization": "Caribbean Electrical and Instrumentation Limited",
-        "highlighted": "Caribbean Electrical and Instrumentation Limited",
-        "role": "Contractor, Project Leader - Played a key role in establishing the company's VoIP division, leading the project from concept to successful launch.",
+        "date": "October 2026 - Present",
+        "organization": "University of the West Indies, St. Augustine Campus",
+        "role": "Academic Marker - DCIT",
         "details": [
-            "Established the VOIP system used by the Synod's Office of the PCTT."
+            "-Assess and Grade student Examinations, Assignments and Coursework in accordance with assessment criteria and university standards.",
+            "-Evaluate students' understanding of course concepts, technical knowledge, and practical application while maintaining accuracy, fairness, and academic integrity."
         ]
     },
+
     {
         "date": "2026 July - August",
         "organization": "Click to Start Foundation",
-        "role": "Student mentor for Camp focusing primarily on AI and Robotics to underprivileged communities in Trinidad and Tobago."
+        "role": "Student mentor",
+        "details": [
+            "-Student Mentor for Camp focusing primarily on AI and Robotics to underprivileged communities in Trinidad and Tobago. ",
+            "-Introduced students to fundamental concepts in AI and Robotics through guided instruction and practical activities, with the goal of deepening their understanding and interest in Technology, while exposing students to concepts they may never have dealt with before.",
+            "-Taught lessons in topics such as Reinforcement Learning and Arduino Programming and Debugging."
+        ]
+    },
+
+
+    {
+        "date": "2025 June - Present",
+        "organization": "Caribbean Electrical and Instrumentation Limited",
+        "highlighted": "Caribbean Electrical and Instrumentation Limited",
+        "role": "Contractor, Project Lead, Warehouse Manager",
+        "details":[
+            "-Played a key role in establishing the company’s VoIP division, leading the launch project from concept to successful launch. ",
+            "-Established the VoIP system used by the Synod's Office of the Presbyterian Church of Trinidad and Tobago . Oversaw project activities, coordinating the implementation of VoIP Infrastructure and ensuring the successful deployment of the system. ",
+            "-Configure and prepare GAI-Tronics Public Address and Emergency communication devices for deployment within industrial facilities, including the bpTT Beachfield Facility."
+        ]
+        
     },
     {
         "date": "2024 June - August",
         "organization": "Caribbean Electrical and Instrumentation Limited",
-        "role": "VOIP Technician - Configuration, Management and Maintenance of VOIP devices/systems"
+        "role": "VoIP Technician",
+        "details":[
+            "-Configuration, Management and Maintenance of VoIP devices/systems.",
+            "-Assessed the viability of this new direction for the company"
+        ]
     },
+
     {
         "date": "2020 - Present",
-        "organization": "Lower Barrackpore Presbyterian Church",
-        "role": "IT Manager, AV Assistant, Camera Operator"
+        "organization":"Lower Barrackpore Presbyterian Church",
+        "role": "IT Manager , AV Assistant, Camera Operator",
+        "details":[
+            "-Manage and maintain audiovisual equipment used during church services, events, and special programmes.",
+            "-Operate camera equipment and assist with video production and live broadcasting of church services."
+        ]
     }
+
+
+
 ]
-
-
-

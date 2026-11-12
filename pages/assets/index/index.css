@@ -733,14 +733,47 @@ body{
     text-align: right;
 }
 
+.work-education-date{
+    font-family: "Jura", sans-serif;
+    color: var(--primary-text);
+    font-size: 1.6rem;
+    margin: 0;
+    font-weight: 600;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+  
+}
+
+.work-education-organization{
+    font-family: "Jura", sans-serif;
+    color: var(--primary-background);
+    background-color: var(--primary-text);
+    font-size: 1.8rem;
+    margin: 0;
+    font-weight: 600;
+    line-height: 0.9;
+    text-transform: uppercase;
+
+}
+
 .work-education-text{
     font-family: "Jura", sans-serif;
     color: var(--primary-text);
-    font-size: 1.2rem;
+    font-size: 24px;
     margin: 0;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 0.9;
-    padding: 0;
+    transform: uppercase;
+}
+
+.work-education-text-details{
+    font-family: "Jura", sans-serif;
+    color: var(--primary-text);
+    font-size: 20px;
+    margin: 0;
+    font-weight: 400;
+    line-height: 1.2;
+   
 }
 
 .resume-button{

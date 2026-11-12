@@ -223,16 +223,16 @@ document.addEventListener('DOMContentLoaded', function () {
                     let detailsHTML = '';
                     if (item.details) {
                         detailsHTML = item.details
-                            .map(detail => `<p class="work-education-text">${detail}</p>`)
+                            .map(detail => `<p class="work-education-text-details">${detail}</p>`)
                             .join('');
                     }
 
                     card.innerHTML = `
-                        <p class="subtitle">
+                        <p class="work-education-date">
                             [${index + 1}] ${item.date} 
-                            <span class="primary-highlighted-text">${org}</span>
+                            <span class="work-education-organization">${org}</span>
                         </p>
-
+                        
                         <p class="work-education-text">
                             ${item.role || ''}
                         </p>
@@ -242,6 +242,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
                     // spacing (JS-only as requested)
                     card.style.marginBottom = "2rem";
+                    card.style.marginTop = "2rem";
 
                     container.appendChild(card);
                 });
@@ -264,18 +265,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
                     // ✅ Add spacing directly with JS
                     card.style.marginBottom = "2rem";
+                    card.style.marginTop = "2rem";
 
                     card.innerHTML = `
-                        <p class="subtitle">
+                        <p class="work-education-date">
                             [${index + 1}] ${item.date} ${item.institution}
                             ${item.highlighted 
-                                ? `<span class="primary-highlighted-text">${item.highlighted}</span>` 
+                                ? `<span class="work-education-organization">${item.highlighted}</span>` 
                                 : ''}
                         </p>
 
                         ${
                             item.details 
-                            ? `<p class="work-education-text">${item.details[0]}</p>` 
+                            ? `<p class="work-education-text-details">${item.details[0]}</p>`
                             : ''
                         }
                     `;
@@ -299,8 +301,8 @@ document.addEventListener('DOMContentLoaded', function () {
                     const row = document.createElement('div');
 
                     row.innerHTML = `
-                        <p class="subtitle">${item.title}</p>
-                        <span class="work-education-text">${item.skills}</span>
+                        <p class="work-education-text">${item.title}</p>
+                        <span class="work-education-text-details">${item.skills}</span>
                     `;
 
                     // spacing (JS-only as requested)
@@ -389,5 +391,4 @@ if (typeof ScrollTrigger !== 'undefined' && !isMobileViewport()) {
         console.warn('ScrollTrigger not available — skipping primary-highlighted-text scroll animation');
     }
 }
-
 

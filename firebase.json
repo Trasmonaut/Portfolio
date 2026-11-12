@@ -33,6 +33,11 @@
         "source": "/projects.html",
         "destination": "/projects",
         "type": 301
+      },
+      {
+        "source": "/live",
+        "destination": "/live.html",
+        "type": 301
       }
     ]
   }
