@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     <td>${item.number}</td>
                     <td>${item.name}</td>
                     <td>${item.description}</td>
-                    <td>${item.type}</td>
+                    <td class="live-table-type">${item.type}</td>
                 `;
 
                 tableBody.appendChild(row);

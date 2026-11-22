@@ -81,7 +81,7 @@ body{
     padding: 2vw;
 }
 .live-table{
-    width: 90%;
+    width: 95%;
     border-collapse: collapse;
     margin-top: 20px;
 }
@@ -99,7 +99,28 @@ body{
 
 .live-table td:nth-child(2) {
      font-weight: 1000; /* Make the second column bold */
-     
+}
+
+.live-table thead th:nth-child(1) {
+    width: 10%; 
+}
+
+.live-table thead th:nth-child(2) {
+    width: 20%; 
+}
+
+.live-table thead th:nth-child(3) {
+    width: 60%; 
+}
+
+.live-table thead th:nth-child(4) {
+    width: 10%; 
+}
+
+.live-table-type{
+    text-transform: uppercase;
+  
+
 }
 
 .preloader-text {
@@ -142,6 +163,12 @@ body{
     box-shadow: none;
     border: 1px solid var(--primary-black);
     border-radius: 5px;
+}
+
+.navbar-fixed {
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    z-index: 1000; /* Ensure it stays on top */
 }
 
 .contact-me-btn{
@@ -271,7 +298,7 @@ body{
     line-height: 0.8;
     margin: 0;
     padding: 0;
-    z-index: 1000;
+    z-index: 100;
     color: var(--primary-text);
     font-family: "Amiko", sans-serif;
     text-transform: uppercase;
@@ -300,7 +327,7 @@ body{
     transform: translate(-50%, -50%); /* Centers the dot on the cursor */
     pointer-events: none; /* Allows clicks to pass through the dot */
     transition: transform 0.1s ease;
-    z-index: 1000; /* Ensures the dot is on top of other elements */
+    z-index: 9999; /* Ensures the dot is on top of other elements */
 
 }
 
